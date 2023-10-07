@@ -1,8 +1,25 @@
+.card-body-content {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.card-body-content-active {
+  overflow: visible;
+  height: 100%;
+  display: block;
+}
+
+
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/img/landing.png");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.25)), url("../assets/img/landing.webp");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: right center;

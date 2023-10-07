@@ -3,8 +3,16 @@ function chbg(img) {
 }
 
 function showContent(selector) {
-  document.getElementById(selector).classList.remove('hidden');
-  setTimeout(function () {
-      document.getElementById(selector).classList.remove('visuallyhidden');
-    }, 20);
+  var toggleClass = 'card-body-content-active';
+  var location = document.getElementById(selector);
+  var hasClass = location.classList.contains(toggleClass);
+
+  if ( !hasClass ) {
+    document.getElementById("btn_"+selector).innerHTML = "Show less";
+    location.classList.add(toggleClass);
+  } 
+  else {
+    location.classList.remove(toggleClass);
+    document.getElementById("btn_"+selector).innerHTML = "Show more";
+  }
 }
