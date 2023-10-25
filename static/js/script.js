@@ -36,8 +36,13 @@ function populateService() {
   for (var i = 0; i<services.length; i++) {
     let lines = services[i].description.split("\n");
     let desc = "";
-    
+
+    desc += '<p class="card-text">'
+    desc += lines[1];
+    desc += '</p>'
+
     // Detect stuff like '-' at start of sentence = bulletpoint
+    /*
     lines.forEach(line => {
       if (line != "") {
         desc += '<p class="card-text">'
@@ -45,7 +50,8 @@ function populateService() {
         desc += '</p>'
       }
     });
-    
+    */
+
     let s = `
       <div class="col">
         <div class="card">
@@ -54,21 +60,19 @@ function populateService() {
             <h5 class="card-title">`+services[i].title+`</h5>
             <div id="service`+i+`" class="card-body-content">`+desc+`</div>
           </div>
-          <div class="card-footer">
-            <button id="btn_service`+i+`" class="btn btn-link" onclick="showContent('service`+i+`')">See more</button>
+          
+          <div class="card-footer bg-transparent">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              See more
+            </button>
           </div>
         </div>
       </div>
-    `
+      `
+            //<button id="btn_service`+i+`" class="btn btn-link" onclick="showContent('service`+i+`')">See more</button>
     document.getElementById("injectServices"). innerHTML += s;
   }
 }
-
-
-
-
-
-
 
 function populateBio() {
   let lines = bio.split("\n");
@@ -89,3 +93,30 @@ function populateBio() {
     }
   });
 }
+
+var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  var button = event.relatedTarget // Button that triggered the modal
+  var id = button.getAttribute('data-id') // Extract info from data-bs-* attributes
+  var project = projects[id];
+  
+  // Update the modal's content.
+  var modalTitle = exampleModal.querySelector('#exampleModalLabel')
+  var modalBodyInput = exampleModal.querySelector('#modal_content')
+  var modalImage = exampleModal.querySelector('#model_image')
+
+  let lines = project.text.split("\n");
+  var content = "";
+
+  lines.forEach(line => {
+    content += '<p>'
+    content += line;
+    content += '</p>'
+  });
+  var title = "";
+  title += '<h5 class="modal-title">'+project.title+'</h5>';
+  title += '<small class="text-muted">'+project.from+' - '+project.to+'</small>';
+  //modalImage.src = "static/assets/img/"+project.img;
+  modalTitle.innerHTML = title;
+  modalBodyInput.innerHTML = content;
+})
