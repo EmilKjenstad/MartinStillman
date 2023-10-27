@@ -1,75 +1,26 @@
-#itemA {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/2048_ba9479e53ffe9349342b0dd0da98c593.jpg");
-  background-size: cover;
+body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
 }
 
-#itemB {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/landing.webp");
-  background-size: cover;
+.service-item > * {
+  margin-bottom: 1.5rem !important;
 }
 
-#itemC {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/mediation-photo-2.jpg");
-  background-size: cover;
+.bg-muted {
+  background-color: rgba(13, 109, 253, 0.25);
 }
-.testt {
-  position: absolute;
-  width: 100%;
-  height: 25%;
-  bottom: 0;
-  left: 0;
-  transition: height 1s;
-}
-
-.testt:hover {
-  height: 100%;
-}
-
-.service-item {
-  aspect-ratio: 2/1;
-  position: relative;
-}
-
 
 #bio_container {
-  padding: 5vw;
   width: 75vw;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.546);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-.bio_entry {
-  display: flex;
-  width: 100%;
-  padding: 1rem;
+#testing > .row:nth-child(even) {
+  flex-direction: row-reverse;
 }
-
-
-
-.bio_entry:nth-child(even) {
-}
-
-.bio_entry {
-}
-
-@media (min-width: 768px) {
-  #bio_container > .bio_entry:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
-  
-  #bio_container > .bio_entry:nth-child(odd) > .bio_col:first-child {
-    border-left: solid 1px black;
-  }
-  
-  #bio_container > .bio_entry:nth-child(even) > .bio_col:first-child {
-    border-right: solid 1px black;
-  }
-  .bio_col {
-    width: 50%;
-    padding: 3rem;
-  }
-}
-
 
 .card-body-content {
   width: 100%;
@@ -173,4 +124,43 @@ header.masthead .masthead-heading {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.service-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  aspect-ratio: 18/1;
+}
+.service-img img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.service-item {
+  padding: 3rem !important;
+}
+
+.service-item > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.service-item > a::after {
+  content: " \2192";
+  transition: 1s;
+}
+
+.service-item > a:hover {
+  color: blue;
+}
+
+.service-item > a:hover::after {
+  margin-left: 2rem;
 }

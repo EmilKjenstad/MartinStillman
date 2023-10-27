@@ -19,7 +19,7 @@ function showContent(selector) {
 
 //load when scroll to it?
 window.onload = function() {
-  populateBio();
+  //populateBio();
   populateService();
   populateContact();
 }
