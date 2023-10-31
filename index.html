@@ -26,7 +26,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse justify-content-between navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand text-light fst-italic fw-bolder" href="#sectionLanding">Martin Stillman</a>
+          <a class="navbar-brand text-light fst-italic fw-bolder" href="#sectionLanding">Healthcare Mediation & Conflict Resolution</a>
           <ul class="nav nav-pills">
             <li><a class="nav-link" href="#sectionBio">Biography</a></li>
             <li><a class="nav-link" href="#sectionService">Services</a></li>
@@ -37,12 +37,13 @@
     </nav>
 
     <!-- LANDING -->
-    <header id="sectionLanding" class="masthead">
+    <header id="sectionLanding" class="masthead paralaxMasthead">
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
               <p class="masthead-subheading">&mdash; TAGLINE</p>
               <p class="masthead-heading">Healthcare Mediation & <span class="text-primary">Conflict Resolution</span></p>
+              <p class="masthead-subheading">Martin Stillman</p>
               <p class="masthead-subheading">Doctor of Medicine (MD), Juris Doctor (JD)</p>
     
             </div>
@@ -55,54 +56,49 @@
           </div>
         </div>
     </header>
-
     
     <!-- Services -->
-    <section  id="sectionService" class="page-section bg-muted container-fluid position-relative" >
+    <section id="sectionService" class="page-section bg-primary bg-gradient container-fluid position-relative" >
 
-      <div id="testing" class="">
-
-        <div class="row">
-          <div class="col-6 service-img">
-              <img src="static/assets/img/2048_ba9479e53ffe9349342b0dd0da98c593.jpg" alt="" />
-          </div>
-          <div class="service-item col-4">
-            <h2>Skill Development and Training in Conflict Resolution</h2>
-            <p>As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people learn how to successfully navigate and resolve conflict.</p>
-            <a class="" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</a>
-          </div>
+      <div class="row">
+        <div class="col-6 service-img">
+            <img src="static/assets/img/2048_ba9479e53ffe9349342b0dd0da98c593.jpg" alt="" />
         </div>
-
-        <div class="row">
-          <div class="col-6 service-img">
-              <img src="static/assets/img/mediation-photo-2.jpg" alt="" />
-          </div>
-          <div class="service-item col-4">
-            <h2>Mediation Services</h2>
-            <p>Martin Stillman is a skilled mediator and facilitator who is available to provide mediation services, either in-person or virtually.</p>
-            <a class="" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</a>
-          </div>
+        <div class="service-item col-4">
+          <h2>Skill Development and Training in Conflict Resolution</h2>
+          <p>As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people learn how to successfully navigate and resolve conflict.</p>
+          <a class="" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</a>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-6 service-img">
-              <img src="static/assets/img/coaching.png" alt="" />
-          </div>
-          <div class="service-item col-4">
-            <h2>Executive Coaching and Leadership Development</h2>
-            <p>Martin Stillman provides executive coaching and leadership development.</p>
-            <a class="" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</a>
-          </div>
+      <div class="row">
+        <div class="col-6 service-img">
+            <img src="static/assets/img/mediation-photo-2.jpg" alt="" />
         </div>
+        <div class="service-item col-4">
+          <h2>Mediation Services</h2>
+          <p>Martin Stillman is a skilled mediator and facilitator who is available to provide mediation services, either in-person or virtually.</p>
+          <a class="" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</a>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-6 service-img">
+            <img src="static/assets/img/coaching.png" alt="" />
+        </div>
+        <div class="service-item col-4">
+          <h2>Executive Coaching and Leadership Development</h2>
+          <p>Martin Stillman provides executive coaching and leadership development.</p>
+          <a class="" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</a>
+        </div>
       </div>
 
     </section>
     
     <!-- Bio -->
-    <section class="page-section parallax container-fluid">
+    <section id="sectionBio" class="page-section parallaxBio container-fluid">
 
-      <div id="bio_container" class="p-5">
+      <div id="bio_container" class="p-5 text-justify">
         <h1>Biography</h1>
         <p>
           Martin Stillman, MD, JD, is a physician, lawyer, and mediator. He is a practicing general internist at Hennepin Healthcare System (HHS) in Minneapolis, Minnesota where he also serves as the Mediation and Conflict Resolution Officer. 
@@ -123,15 +119,105 @@
     
     </section>
 
+    <!-- TESTIMONIALS -->
+    <section id="sectionTestimonials" class="page-section parallaxTestimonial p-5 container-fluid bg-info">
+
+      <div class="container">
+
+        <h1>Testimonials</h1>
+
+        <hr class="divider">
+
+        <div class="row">
+          <div class="col-1">
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+    
+          </div>
+          <div class="col-10">
+            <div id="testimonialsCarusel" class="carousel slide" data-bs-ride="carousel">
+  
+              <div class="carousel-inner">
+    
+                <div class="carousel-item active">
+
+                  <h3>Workshop Participant</h3>
+                  <blockquote class="blockquote text-center">
+                    <p>Great exercise!</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+
+                </div>
+    
+                <div class="carousel-item">
+
+                  <h3>Workshop Participant</h3>
+                  <blockquote class="blockquote text-center">
+                    <p>Very practical information on how to navigate tough conversations within our organization.
+                      some added extra text for overflow asdas asd sad asd sad as fa
+                    </p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+
+                </div>
+    
+                <div class="carousel-item">
+
+                  <h3>Workshop Participant</h3>
+                  <blockquote class="blockquote text-center">
+                    <p>Excellent - best of the conference so far.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+
+                </div>
+
+                <div class="carousel-item">
+
+                  <h3>Workshop Participant</h3>
+                  <blockquote class="blockquote text-center">
+                    <p>Great group activity!</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+
+            </div>
+  
+          </div>
+          <div class="col-1">
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section>
+    
     <!-- CONTACT -->
-    <section class="page-section p-5 container-fluid" id="sectionContact">
+    <section id="sectionContact" class="page-section p-5 container-fluid">
       
       <div class="container">
         <div class="row">
           
-          <div class="col-xl-6">
-            <div class="container p-0 position-relative">
-              <img class="img-thumbnail" src="static/assets/img/martin-stillman-for-social-media-003-2.png" alt="" />
+          <div class="col-xl-6 align-baseline">
+            <div class="container w-75 p-0 position-relative">
+              
+              <img class="img-thumbnail w-100" src="static/assets/img/martin-stillman-for-social-media-003-2.png" alt="" />
               <div class="position-absolute bottom-0 bg-gradient w-100 h-auto p-5" style="z-index: 3;">
                 <h3>&mdash; Marin Stillman</h3>
                 <p>MD &#x2022; JD &#x2022; FACP &#x2022; FCLM</p>
@@ -161,6 +247,7 @@
                   form-control
                   invalid-feedback
                 -->
+                
                 <!-- Name input-->
                 <div class="form-floating mb-3">
                   <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -208,7 +295,7 @@
                 <!-- an error submitting the form-->
                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                 <!-- Submit Button-->
-                <div class="d-grid"><button class="btn btn-primary btn-form rounded-pill disabled" id="submitButton" type="submit">Submit</button></div>
+                <div class="d-grid"><button class="btn btn-primary text-uppercase rounded-pill disabled" id="submitButton" type="submit">Submit</button></div>
                 
               </form>
             </div>
@@ -232,10 +319,14 @@
 
     </section>
 
-
     <!-- FOOTER -->
     <footer class="footer bg-primary text-white">
-      <div class="container">Copyright © Emil Kjenstad 2023</div>
+      <div class="container">
+        <h5>Healthcare Mediation & Conflict Resolution</h5>
+        <p>email@example.com</p>
+        <small>Created by Emil Kjenstad 2023</small>
+
+      </div>
     </footer>
 
     <!-- Modal -->

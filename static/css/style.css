@@ -1,105 +1,6 @@
+/* GENERAL */
 section {
   border-top: 2rem solid var(--bs-primary);
-}
-
-.service-item > * {
-  margin-bottom: 1.5rem !important;
-}
-
-.bg-muted {
-  background-color: rgba(13, 109, 253, 0.25);
-}
-
-#bio_container {
-  width: 75vw;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-#testing > .row:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.card-body-content {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-}
-
-.card-body-content-active {
-  overflow: visible;
-  height: 100%;
-  display: block;
-}
-
-#sectionContact {
-  /*
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.25)), url("../assets/img/2048_0395b2760c49eae9242a2c208975bab2.png");
-*/
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right center;
-  background-size: cover;
-}
-
-.parallax {
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/bio_img.jpg");
-
-  min-height: 100%; /* Set a specific height */
-
-  background-attachment: fixed; /* control the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-header.masthead {
-  position: relative;
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
-  color: #fff;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), url("../assets/img/landing2.png");
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right center;
-  background-size: cover;
-}
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-header.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
-  }
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-  header.masthead .masthead-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }
 }
 
 .page-section h1 {
@@ -122,20 +23,29 @@ header.masthead .masthead-heading {
   margin-bottom: 4rem;
 }
 
-.footer {
-  text-align: center;
-  font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.contact_img {
-  width: 14rem;
-  height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+hr.divider {
+  height: 200px;
+  max-width: 5.25rem;
+  margin: 1.5rem auto;
+  background-color: var(--bs-primary);
+  opacity: 1;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+/* SERVICE */
+.service-item > * {
+  margin-bottom: 1.5rem !important;
+}
+
+#sectionService > .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#sectionService > .row > * {
+  padding: 0;
 }
 
 .service-img {
@@ -143,16 +53,13 @@ header.masthead .masthead-heading {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  aspect-ratio: 18/1;
+  aspect-ratio: 18/1; /* Ideally a better solution*/
 }
+
 .service-img img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%
-}
-
-#testing > .row > * {
-  padding: 0;
 }
 
 .service-item {
@@ -165,6 +72,7 @@ header.masthead .masthead-heading {
   color: black;
   font-weight: 700;
 }
+
 .service-item > a::after {
   content: " \2192";
   transition: 1s;
@@ -178,59 +86,86 @@ header.masthead .masthead-heading {
   margin-left: 2rem;
 }
 
-.h-2 {
-  height: 2%;
-}
-.h-top {
-  height: 2rem;
-}
-
-.contact-form > * {
-  margin-bottom: 3rem;
+/* BIO */
+#bio_container {
+  width: 75vw;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-.contact-form > input {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid 2px var(--bs-white);
-
-  border-radius: 1px;
-  background-color: transparent;
-
-  color: white;
+/*  PARALAX */
+.parallaxBio {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/bio_img.jpg");
 }
 
-input[type=email]:focus {
-  color: white;
-  background-color: transparent;
+.parallaxTestimonial {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/landing.webp");
 }
 
-input[type=email]::placeholder{
-  color:lightgray;
+.paralaxMasthead {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), url("../assets/img/landing2.png");
 }
 
-textarea {
-  background-color: transparent;
-  color: wheat;
+.parallaxTestimonial, .parallaxBio,
+.paralaxMasthead {
+  min-height: 100%; /* Set a specific height */
+  background-attachment: fixed; /* control the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-hr.divider {
-  height: 200px;
-  max-width: 5.25rem;
-  margin: 1.5rem auto;
-  background-color: var(--bs-primary);
-  opacity: 1;
+/*  HEADER */
+header.masthead {
+  position: relative;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  color: #fff;
 }
 
-.btn-form {
-  padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header.masthead .masthead-heading {
+  font-size: 3.25rem;
   font-weight: 700;
-  text-transform: uppercase;
-  border: none;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.contact-info {
-  border: 3px solid black !important; 
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.footer .container * {
+  margin: 0;
+}
+
+/* MEDIA */
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
 }
