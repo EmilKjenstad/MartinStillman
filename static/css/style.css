@@ -214,3 +214,23 @@ textarea {
   background-color: transparent;
   color: wheat;
 }
+
+hr.divider {
+  height: 200px;
+  max-width: 5.25rem;
+  margin: 1.5rem auto;
+  background-color: var(--bs-primary);
+  opacity: 1;
+}
+
+.btn-form {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.contact-info {
+  border: 3px solid black !important; 
+}
