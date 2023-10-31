@@ -38,7 +38,7 @@ body {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/bio_img.jpg");
 
   /* Set a specific height */
-  min-height: 100vh;
+  min-height: 100%;
 
   /* control the parallax scrolling effect */
   background-attachment: fixed;
@@ -51,7 +51,7 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   color: #fff;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.25)), url("../assets/img/landing.webp");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), url("../assets/img/landing1.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: right center;
@@ -141,7 +141,10 @@ header.masthead .masthead-heading {
 }
 
 .service-item {
-  padding: 3rem !important;
+  padding-left: 3rem !important;
+  padding-right: 10rem !important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .service-item > a {
@@ -160,4 +163,8 @@ header.masthead .masthead-heading {
 
 .service-item > a:hover::after {
   margin-left: 2rem;
+}
+
+section {
+  border-top: solid 2rem var(--bs-primary);
 }
