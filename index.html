@@ -20,18 +20,41 @@
   <body class="bg-light" data-bs-spy="scroll" data-bs-target="#scrollspy-nav">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top px-3" id="scrollspy-nav">
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar scroll</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  -->
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top" id="scrollspy-nav" style="transition: 0.25s;">
+      <div class="container-fluid">
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse justify-content-between navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand text-light fst-italic fw-bolder" href="#sectionLanding">Healthcare Mediation & Conflict Resolution</a>
-          <ul class="nav nav-pills">
-            <li><a class="nav-link" href="#sectionService">Services</a></li>
-            <li><a class="nav-link" href="#sectionBio">Biography</a></li>
-            <li><a class="nav-link" href="#sectionContact">Contact</a></li>
+          <a class="navbar-brand fst-italic fw-bolder" href="#sectionLanding">Healthcare Mediation & Conflict Resolution</a>
+          
+          <ul class="nav nav-pills navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item"><a class="nav-link" href="#sectionService">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sectionBio">Biography</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sectionContact">Contact</a></li>
           </ul>
+          
         </div>
       </div>
     </nav>
@@ -39,15 +62,14 @@
     <!-- LANDING -->
     <header id="sectionLanding" class="masthead paralaxMasthead">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8">
+          <div class="row bg-gradient">
+            <div class="col-lg-9">
               <p class="masthead-subheading">&mdash; TAGLINE</p>
-              <p class="masthead-heading">Healthcare Mediation & <span class="text-primary">Conflict Resolution</span></p>
+              <p class="masthead-heading">Conflict Resolution in Healthcare & Coaching</p>
               <p class="masthead-subheading">Martin Stillman</p>
               <p class="masthead-subheading">Doctor of Medicine (MD), Juris Doctor (JD)</p>
-    
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
               <p class="masthead-subheading">Skills</p>
               <p class="masthead-subheading">Mediation</p>
               <p class="masthead-subheading fs-5">Coaching</p>

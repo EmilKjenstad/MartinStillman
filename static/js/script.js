@@ -1,6 +1,38 @@
+window.onscroll = function() {navCheck()} ;
+
+function navCheck() {
+  const nav = document.querySelector("#scrollspy-nav");
+  var h = nav.offsetHeight;
+
+  var top = document.querySelector('#sectionLanding').offsetHeight;
+  var bord = parseInt(getComputedStyle(document.querySelector('section')).borderTopWidth);
+
+  console.log(top, bord, h)
+
+  if(window.scrollY < top-h) {
+    // BG Color
+    nav.classList.add("bg-transparent")
+    nav.classList.remove("bg-primary")
+
+    //TEXT color
+    nav.classList.add("navbar-light")
+    nav.classList.remove("navbar-dark")
+  }
+  else {
+    // BG Color
+    nav.classList.add("bg-primary")
+    nav.classList.remove("bg-transparent")
+
+    //TEXT color
+    nav.classList.add("navbar-dark")
+    nav.classList.remove("navbar-light")
+  }
+}
+
 
 //load when scroll to it?
 window.onload = function() {
+  navCheck();
   //populateBio();
   //populateService();
   //populateContact();
