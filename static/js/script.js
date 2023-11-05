@@ -7,9 +7,8 @@ function navCheck() {
   var top = document.querySelector('#sectionLanding').offsetHeight;
   var bord = parseInt(getComputedStyle(document.querySelector('section')).borderTopWidth);
 
-  console.log(top, bord, h)
-
-  if(window.scrollY < top-h) {
+  // used to be top-h
+  if(window.scrollY < 10) {
     // BG Color
     nav.classList.add("bg-transparent")
     nav.classList.remove("bg-primary")
