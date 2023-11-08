@@ -1,6 +1,6 @@
 /* GENERAL */
 section {
-  border-top: 2rem solid var(--bs-primary);
+  border-top: 0.5rem solid var(--bs-primary);
 }
 
 .page-section h1 {
