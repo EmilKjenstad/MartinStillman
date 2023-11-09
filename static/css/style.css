@@ -188,3 +188,16 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+@media (max-width: 575.98px) {
+  #bio_container {
+    width: 100%;
+    padding: 0 ;
+  }
+  #sectionService .row {
+    height: 100vh;
+  }
+  .hide-phone {
+    visibility: hidden;
+  }
+}

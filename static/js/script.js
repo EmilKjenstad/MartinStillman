@@ -31,10 +31,30 @@ function navCheck() {
 
 //load when scroll to it?
 window.onload = function() {
-  navCheck();
-  //populateBio();
-  //populateService();
-  //populateContact();
+
+  try {
+    navCheck();
+  } catch (error) {
+    console.log("ERROR NAV");
+  }
+
+  try {
+    //populateBio();
+  } catch (error) {
+    console.log("ERROR BIO");
+  }
+
+  try {
+    populateService();
+  } catch (error) {
+    console.log("ERROR SERVICE");
+  }
+
+  try {
+    populateContact();
+  } catch (error) {
+    console.log("ERROR CONTACT");
+  }
 }
 
 function populateContact() {
@@ -66,24 +86,17 @@ function populateService() {
     */
 
     let s = `
-      <div class="col">
-        <div class="card">
-          <img src="static/assets/img/`+services[i].img+`" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">`+services[i].title+`</h5>
-            <div id="service`+i+`" class="card-body-content">`+desc+`</div>
-          </div>
-          
-          <div class="card-footer bg-transparent">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              See more
-            </button>
-          </div>
-        </div>
-      </div>
+            <div class="row">
+              <div class="col-lg-6 service-img skills" style="background-image: url('static/assets/img/`+services[i].img+`');"></div>
+              <div class="service-item col-lg-4">
+                <h2>`+services[i].title+`</h2>
+                <p>`+desc+`</p>
+                <a class="" role="button" data-bs-toggle="modal" service-id="`+i+`" data-bs-target="#exampleModal">See more</a>
+              </div>
+            </div>
       `
             //<button id="btn_service`+i+`" class="btn btn-link" onclick="showContent('service`+i+`')">See more</button>
-    document.getElementById("injectServices"). innerHTML += s;
+    document.getElementById("sectionService"). innerHTML += s;
   }
 }
 
@@ -110,15 +123,14 @@ function populateBio() {
 var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
   var button = event.relatedTarget // Button that triggered the modal
-  var id = button.getAttribute('data-id') // Extract info from data-bs-* attributes
-  var project = projects[id];
+  var id = button.getAttribute('service-id') // Extract info from data-bs-* attributes
+  var service = services[id];
   
   // Update the modal's content.
-  var modalTitle = exampleModal.querySelector('#exampleModalLabel')
-  var modalBodyInput = exampleModal.querySelector('#modal_content')
-  var modalImage = exampleModal.querySelector('#model_image')
+  var modalTitle = exampleModal.querySelector('.modal-title')
+  var modalBodyInput = exampleModal.querySelector('.modal-body')
 
-  let lines = project.text.split("\n");
+  let lines = service.description.split("\n");
   var content = "";
 
   lines.forEach(line => {
@@ -126,10 +138,20 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
     content += line;
     content += '</p>'
   });
-  var title = "";
-  title += '<h5 class="modal-title">'+project.title+'</h5>';
-  title += '<small class="text-muted">'+project.from+' - '+project.to+'</small>';
-  //modalImage.src = "static/assets/img/"+project.img;
+  var title = service.title;
+
   modalTitle.innerHTML = title;
   modalBodyInput.innerHTML = content;
 })
+
+
+var modal_btn = document.getElementById('btn-contact')
+modal_btn.onclick = function () {
+  var pos = document.querySelector('#sectionContact').getBoundingClientRect();
+
+  console.log(window.scrollY, pos.top)
+  window.scrollTo(0, window.scrollY+pos.top);
+
+//  $(document.body).scrollTop($('#anchorId').offset().top);
+  
+}
