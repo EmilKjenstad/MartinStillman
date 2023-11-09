@@ -65,6 +65,7 @@ function populateContact() {
 }
 
 function populateService() {
+  document.getElementById("sectionService"). innerHTML = "";
 
   for (var i = 0; i<services.length; i++) {
     let lines = services[i].description.split("\n");
