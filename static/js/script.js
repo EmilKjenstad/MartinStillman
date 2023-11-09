@@ -87,7 +87,7 @@ function populateService() {
     */
 
     let s = `
-            <div class="row">
+            <div id="service`+i+`" class="row">
               <div class="col-lg-6 service-img skills" style="background-image: url('static/assets/img/`+services[i].img+`');"></div>
               <div class="service-item col-lg-4">
                 <h2>`+services[i].title+`</h2>
@@ -124,7 +124,14 @@ function populateBio() {
 var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
   var button = event.relatedTarget // Button that triggered the modal
+  var c = button.getAttribute('class')
   var id = button.getAttribute('service-id') // Extract info from data-bs-* attributes
+
+  if (c.includes("dropdown-item")) {
+    var pos = document.querySelector('#service'+id).getBoundingClientRect();
+    window.scrollTo(0, window.scrollY+pos.top);
+  }
+
   var service = services[id];
   
   // Update the modal's content.
@@ -146,13 +153,7 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
 })
 
 
-var modal_btn = document.getElementById('btn-contact')
-modal_btn.onclick = function () {
+document.getElementById('btn-contact').onclick = function () {
   var pos = document.querySelector('#sectionContact').getBoundingClientRect();
-
-  console.log(window.scrollY, pos.top)
   window.scrollTo(0, window.scrollY+pos.top);
-
-//  $(document.body).scrollTop($('#anchorId').offset().top);
-  
 }

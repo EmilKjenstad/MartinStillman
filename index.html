@@ -51,9 +51,22 @@
           <a class="navbar-brand fst-italic fw-bolder" href="#sectionLanding">Healthcare Mediation & Conflict Resolution</a>
           
           <ul class="nav nav-pills navbar-nav my-2 my-lg-0 navbar-nav-scroll">
-            <li class="nav-item"><a class="nav-link" href="#sectionService">Services</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#sectionService" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="0" data-bs-target="#exampleModal">Skill development and Training in Conflict Resolution</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="1" data-bs-target="#exampleModal">Mediation Services</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="2" data-bs-target="#exampleModal">Executive Coaching and Leadership Development</a></li>
+              </ul>
+            </li>
+
             <li class="nav-item"><a class="nav-link" href="#sectionBio">Biography</a></li>
             <li class="nav-item"><a class="nav-link" href="#sectionContact">Contact</a></li>
+
           </ul>
           
         </div>
