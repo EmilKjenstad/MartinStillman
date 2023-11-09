@@ -2,6 +2,9 @@ window.onscroll = function() {navCheck()} ;
 
 function navCheck() {
   const nav = document.querySelector("#scrollspy-nav");
+  const mast_blur = document.querySelector("#mast-gradient");
+  const mast_content = document.querySelector("#mast-content");
+
   var h = nav.offsetHeight;
 
   var top = document.querySelector('#sectionLanding').offsetHeight;
@@ -16,6 +19,10 @@ function navCheck() {
     //TEXT color
     nav.classList.add("navbar-light")
     nav.classList.remove("navbar-dark")
+
+    mast_blur.classList.add("bg-gradient")
+    mast_content.classList.remove("visually-hidden")
+
   }
   else {
     // BG Color
@@ -25,6 +32,10 @@ function navCheck() {
     //TEXT color
     nav.classList.add("navbar-dark")
     nav.classList.remove("navbar-light")
+
+    mast_blur.classList.remove("bg-gradient")
+    mast_content.classList.add("visually-hidden")
+
   }
 }
 
