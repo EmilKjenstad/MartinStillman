@@ -55,7 +55,7 @@ window.onload = function() {
   }
 
   try {
-    //populateBio();
+    populateBio();
   } catch (error) {
     console.log("ERROR BIO");
   }
@@ -103,12 +103,12 @@ function populateService() {
     */
 
     let s = `
-            <div id="service`+i+`" class="row">
+            <div id="service`+i+`" class="row fs-2">
               <div class="col-lg-6 service-img skills" style="background-image: url('static/assets/img/`+services[i].img+`');"></div>
-              <div class="service-item col-lg-4">
-                <h2>`+services[i].title+`</h2>
+              <div class="service-item col-lg-6">
+                <p class="fw-bolder" style="font-size: larger;">`+services[i].title+`</p>
                 <p>`+desc+`</p>
-                <a class="" role="button" data-bs-toggle="modal" service-id="`+i+`" data-bs-target="#exampleModal">See more</a>
+                <a class="fs-1" role="button" data-bs-toggle="modal" service-id="`+i+`" data-bs-target="#exampleModal">Learn more</a>
               </div>
             </div>
       `
@@ -117,9 +117,28 @@ function populateService() {
   }
 }
 
+let show_more = false;
+
 function populateBio() {
   let lines = bio.split("\n");
   
+  if (show_more) {
+    const entry = document.createElement("div");
+    entry.classList.add('bio_entry');
+
+    const content = document.createElement("div");
+    content.classList.add('bio_col');
+
+    const textnode = document.createTextNode(lines[0]);
+
+    content.appendChild(textnode);
+    entry.appendChild(content);
+    document.getElementById("bio_container").appendChild(entry);
+
+  } else {
+
+  }
+
   lines.forEach(line => {
     if (line != "") {
       const entry = document.createElement("div");

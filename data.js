@@ -19,7 +19,7 @@ let services = [
         title: "Skill Development and Training in Conflict Resolution",
         img: "2048_ba9479e53ffe9349342b0dd0da98c593.jpg",
         description: `
-            As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people learn how to successfully navigate and resolve conflict.
+            As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people successfully navigate and resolve conflict.
             After years of ongoing experience as a Mediation and Conflict Resolution Officer in a large health system, Martin Stillman developed the Conflict Resolution and Facilitation Training program (©CRAFT) to advance the conflict resolution skills necessary to be successful in today’s complex healthcare environments. 
             Skill-building takes place through interactive, highly acclaimed workshops, and material can be tailored to meet the needs of your organization. 
             Topics have included:
@@ -42,7 +42,7 @@ let services = [
     },
     {
         title: "Executive Coaching and Leadership Development",
-        img: "landing.webp",
+        img: "coaching.png",
         description: `
             Martin Stillman provides executive coaching and leadership development.
             Dr. Stillman combines his extensive leadership and practical experience with an ability to teach and coach in working one-on-one with individuals seeking coaching and professional development. He honed these skills over years as an invited coach and educator for the University of California, San Francisco (UCSF) prestigious year-long physician leadership training program where he mentored physicians and other healthcare providers in their year-long experience. 
