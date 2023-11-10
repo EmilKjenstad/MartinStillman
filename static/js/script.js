@@ -20,8 +20,8 @@ function navCheck() {
     nav.classList.add("navbar-light")
     nav.classList.remove("navbar-dark")
 
-    mast_blur.classList.add("bg-gradient")
-    mast_content.classList.remove("visually-hidden")
+//    mast_blur.classList.add("bg-gradient")
+//    mast_content.classList.remove("visually-hidden")
 
   }
   else {
@@ -33,8 +33,8 @@ function navCheck() {
     nav.classList.add("navbar-dark")
     nav.classList.remove("navbar-light")
 
-    mast_blur.classList.remove("bg-gradient")
-    mast_content.classList.add("visually-hidden")
+//    mast_blur.classList.remove("bg-gradient")
+//    mast_content.classList.add("visually-hidden")
 
   }
 }
