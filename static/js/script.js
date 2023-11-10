@@ -4,7 +4,8 @@ function navCheck() {
   const nav = document.querySelector("#scrollspy-nav");
   const mast_blur = document.querySelector("#mast-gradient");
   const mast_content = document.querySelector("#mast-content");
-
+  const nav_title = document.querySelector("#nav-title");
+  
   var h = nav.offsetHeight;
 
   var top = document.querySelector('#sectionLanding').offsetHeight;
@@ -20,6 +21,8 @@ function navCheck() {
     nav.classList.add("navbar-light")
     nav.classList.remove("navbar-dark")
 
+    nav_title.classList.add("fs-3")
+
 //    mast_blur.classList.add("bg-gradient")
 //    mast_content.classList.remove("visually-hidden")
 
@@ -32,6 +35,8 @@ function navCheck() {
     //TEXT color
     nav.classList.add("navbar-dark")
     nav.classList.remove("navbar-light")
+
+    nav_title.classList.remove("fs-3")
 
 //    mast_blur.classList.remove("bg-gradient")
 //    mast_content.classList.add("visually-hidden")
