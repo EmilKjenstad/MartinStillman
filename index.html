@@ -115,12 +115,17 @@
     </section>
     
     <!-- Bio -->
-    <section id="sectionBio" class="page-section parallaxBio">
+    <section id="sectionBio" class="page-section parallaxBio position-relative">
 
       <div id="bio_container" class="p-5 text-justify container-fluid fs-3">
         <h1>Biography</h1>
+        <div id="bio_content" class="bio-content"></div>
       </div>
-    
+      
+      <button id="btn-bio" class="btn btn-primary sticky-bottom" onclick=showContent()>
+        <i class="bi bi-arrows-expand"></i>
+      </button>
+      
     </section>
     <!-- TESTIMONIALS -->
     <section id="sectionTestimonials" class="page-section parallaxTestimonial p-5 container-fluid bg-info">
