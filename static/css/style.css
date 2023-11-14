@@ -1,4 +1,24 @@
 /* GENERAL */
+.shrink {
+  font-size: 64px;
+  line-height: 2.5rem;
+}
+
+.bio-content {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.bio-content-active {
+  overflow: visible;
+  height: 100%;
+  display: block;
+}
+
 section {
   border-top: 0.5rem solid var(--bs-primary);
 }

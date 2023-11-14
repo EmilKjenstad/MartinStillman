@@ -1485,6 +1485,29 @@
       if (isCycling) {
         this.cycle();
       }
+
+      Carousel.resizeFont(nextElement);
+
+    }
+
+    static resizeFont(e) {
+      const shrink_element = e.querySelector(".shrink")
+      
+
+      var shrink_size = parseInt(getComputedStyle(shrink_element).getPropertyValue('font-size'));
+      var shrink_parent = shrink_element.parentElement;
+      const parent_width = parseInt(getComputedStyle(shrink_parent).getPropertyValue('width'))
+      const parent_heigth = parseInt(getComputedStyle(shrink_parent).getPropertyValue('height'))
+      
+
+      while( shrink_element.offsetWidth > parent_width || shrink_element.offsetHeight > parent_heigth )
+      {
+        shrink_element.style.fontSize = shrink_size + "px"
+        shrink_size -= 1
+      }
+
+      shrink_element.shrinked = true;
+
     }
 
     _directionToOrder(direction) {
@@ -1582,7 +1605,15 @@
    * ------------------------------------------------------------------------
    */
 
+  window.onresize = function() {
 
+    for(const element of document.getElementsByClassName("shrink"))
+    {
+      element.shrinked = false;
+      Carousel.resizeFont(element.parentElement)
+    }
+
+  };
   EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, Carousel.dataApiClickHandler);
   EventHandler.on(window, EVENT_LOAD_DATA_API$2, () => {
     const carousels = SelectorEngine.find(SELECTOR_DATA_RIDE);
