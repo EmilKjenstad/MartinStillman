@@ -2,6 +2,7 @@ window.onscroll = function() {navCheck()} ;
 
 function navCheck() {
   const nav = document.querySelector("#scrollspy-nav");
+  const prog = document.querySelector("#prog");
   const mast_blur = document.querySelector("#mast-gradient");
   const mast_content = document.querySelector("#mast-content");
   const nav_title = document.querySelector("#nav-title");
@@ -10,6 +11,13 @@ function navCheck() {
 
   var top = document.querySelector('#sectionLanding').offsetHeight;
   var bord = parseInt(getComputedStyle(document.querySelector('section')).borderTopWidth);
+
+  var body = document.body, html = document.documentElement;
+
+  var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+  var windowY0 = window.scrollY;
+  var percentage = ( windowY0 / (height-window.innerHeight) );
+  document.querySelector("#prog .progress-bar").style.width = (percentage*100) + "%"
 
   // used to be top-h
   if(window.scrollY < 10 && screen.width > 1200) {
@@ -23,11 +31,13 @@ function navCheck() {
 
     nav_title.classList.add("fs-3")
 
+    //prog.classList.add("visually-hidden")
 //    mast_blur.classList.add("bg-gradient")
 //    mast_content.classList.remove("visually-hidden")
 
   }
   else {
+  
     // BG Color
     nav.classList.add("bg-primary")
     nav.classList.remove("bg-transparent")
@@ -38,6 +48,7 @@ function navCheck() {
 
     nav_title.classList.remove("fs-3")
 
+    //prog.classList.remove("visually-hidden")
 //    mast_blur.classList.remove("bg-gradient")
 //    mast_content.classList.add("visually-hidden")
 
