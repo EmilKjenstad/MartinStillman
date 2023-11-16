@@ -146,6 +146,10 @@ hr.divider {
 }
 
 /*  HEADER */
+.landing-next {
+  color: var(--bs-primary);
+}
+
 .landing-line {
   width: 5rem;
   height: 0.2rem;
