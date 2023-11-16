@@ -1,6 +1,22 @@
+const test_bio = document.querySelector("#bio_content");
+
+test_bio.onscroll = function() {
+  const test_prog = document.querySelector("#prog-bio .progress-bar");
+  
+  var y = test_bio.scrollTop
+  var h = test_bio.scrollHeight - test_bio.offsetHeight 
+
+  var percent = y/h*100
+
+  test_prog.style.width = percent + "%";
+}
+
 window.onscroll = function() {navCheck()} ;
 
 function navCheck() {
+
+
+
   const nav = document.querySelector("#scrollspy-nav");
   const prog = document.querySelector("#prog");
   const mast_blur = document.querySelector("#mast-gradient");

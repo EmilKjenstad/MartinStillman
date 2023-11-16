@@ -4748,7 +4748,7 @@ textarea.form-control-lg {
 }
 .progress {
   display: flex;
-  height: 1rem;
+  height: 0.75rem;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
@@ -4764,7 +4764,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: var(--bs-blue);
-  transition: width 0.6s ease;
+  transition: width 0.1s linear;
 }
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
