@@ -98,6 +98,42 @@ window.onload = function() {
   } catch (error) {
     console.log("ERROR CONTACT");
   }
+
+  try {
+    populateTestimonials();
+  } catch (error) {
+    console.log("ERROR CONTACT");
+  }
+}
+
+function populateTestimonials() {
+  var first = true;
+  
+  for (let i = 0; i<testimonials.length; i++ ) {
+    var testimonial = testimonials[i];
+    
+    let first_item = "";
+    if (first) first_item = "active";
+
+    let t = `
+      <div class="carousel-item `+first_item+`">
+
+        <h3>`+ testimonial.extra +`</h3>
+        <blockquote class="blockquote text-center">
+          <span class="shrink">`+ testimonial.quote +`</span>
+          <footer class="blockquote-footer">`+ testimonial.name +`, <cite title="Source Title">`+ testimonial.title +`</cite></footer>
+        </blockquote>
+
+      </div>
+    `
+    document.querySelector("#testimonialsCarusel .carousel-inner").innerHTML += t;
+    
+    var btn =  '<button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="'+i+'" aria-label="Slide '+(i+1)+'" class="'+first_item+'" aria-current="'+first+'"></button>';
+    document.querySelector("#testimonialsCarusel .carousel-indicators").innerHTML += btn;
+    
+    first = false;
+  }
+
 }
 
 function populateContact() {

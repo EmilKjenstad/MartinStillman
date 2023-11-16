@@ -54,3 +54,39 @@ let services = [
         `
     },
 ]
+
+let testimonials = [
+    {
+        name: "Someone famous",
+        title: "Source Title",
+        extra: "Workshop Participant",
+        quote: `
+            Great exercise!
+        `,
+    },
+    {
+        name: "Someone famous",
+        title: "Source Title",
+        extra: "Workshop Participant",
+        quote: `
+            Very practical information on how to navigate tough conversations within our organization.
+            some added extra text for overflow asdas asd sad asd sad as fa
+        `,
+    },
+    {
+        name: "Someone famous",
+        title: "Source Title",
+        extra: "Workshop Participant",
+        quote: `
+            Excellent - best of the conference so far.
+        `,
+    },
+    {
+        name: "Someone famous",
+        title: "Source Title",
+        extra: "Workshop Participant",
+        quote: `
+            Great group activity!
+        `,
+    },
+]
