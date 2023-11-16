@@ -64,18 +64,8 @@ hr.divider {
   padding: 0;
 }
 
-.coaching {
-  background-image: url("../assets/img/coaching.png");
-}
-.skills {
-  background-image: url("../assets/img/2048_ba9479e53ffe9349342b0dd0da98c593.jpg");
-}
-.mediation {
-  background-image: url("../assets/img/mediation-photo-2.jpg");
-}
-
 .service-img {
-  min-height: 300px; /* Set a specific height */
+  min-height: 400px; /* Set a specific height */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
