@@ -134,41 +134,41 @@ function populateService() {
 let show_more = false;
 
 function populateBio() {
+  
   let lines = bio.split("\n");
   
-  if (show_more) {
-    const entry = document.createElement("div");
-    entry.classList.add('bio_entry');
-
-    const content = document.createElement("div");
-    content.classList.add('bio_col');
-
-    const textnode = document.createTextNode(lines[0]);
-
-    content.appendChild(textnode);
-    entry.appendChild(content);
-    document.getElementById("bio_container").appendChild(entry);
-
-  } else {
-
-  }
-
   lines.forEach(line => {
     if (line != "") {
-      const entry = document.createElement("div");
-      entry.classList.add('bio_entry');
 
-      const content = document.createElement("div");
-      content.classList.add('bio_col');
+      let desc = "";
 
-      const textnode = document.createTextNode(line);
-
-      content.appendChild(textnode);
-      entry.appendChild(content);
-      document.getElementById("bio_container").appendChild(entry);
+      desc += '<p class="card-text">'
+      desc += line;
+      desc += '</p>'
+  
+      document.getElementById("bio_content").innerHTML += desc;
+      
     }
   });
+  
+  document.getElementById("bio_content").innerHTML += ``;
 }
+
+function showContent() {
+  var toggleClass = 'bio-content-active';
+  var location = document.getElementById('bio_content');
+  var hasClass = location.classList.contains(toggleClass);
+
+  if ( !hasClass ) {
+    document.getElementById("btn-bio").innerHTML = "<i class='bi bi-arrows-collapse'></i>";
+    location.classList.add(toggleClass);
+  } 
+  else {
+    location.classList.remove(toggleClass);
+    document.getElementById("btn-bio").innerHTML = "<i class='bi bi-arrows-expand'></i>";
+  }
+}
+
 
 var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
