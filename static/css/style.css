@@ -1,17 +1,13 @@
 /* GENERAL */
 .bio-content {
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
 }
 
 .bio-content-active {
-  overflow: visible;
-  height: 100%;
-  display: block;
 }
 
 section {
@@ -225,8 +221,9 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-
-@media (max-width: 575.98px) {
+*/
+@media (min-width: 1200px) {
+  /*
   #bio_container {
     width: 100%;
     padding: 0 ;
@@ -237,5 +234,8 @@ header.masthead .masthead-heading {
   .hide-phone {
     visibility: hidden;
   }
+  */
+  #btn-bio {
+    display: none;
+  }
 }
-*/
