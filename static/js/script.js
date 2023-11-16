@@ -12,7 +12,7 @@ function navCheck() {
   var bord = parseInt(getComputedStyle(document.querySelector('section')).borderTopWidth);
 
   // used to be top-h
-  if(window.scrollY < 10) {
+  if(window.scrollY < 10 && screen.width > 1200) {
     // BG Color
     nav.classList.add("bg-transparent")
     nav.classList.remove("bg-primary")
