@@ -13,11 +13,9 @@
 }
 @media (max-width: 1200px) {
   .bio-content {
-    height: 100%;
   }
   #bio_container {
     width: 100vw !important;
-    padding: 100px !important;
   }
 }
 
@@ -236,8 +234,8 @@ header.masthead .masthead-heading {
   }
 }
 
+/*
 @media (min-width: 1200px) {
-  /*
   #bio_container {
     width: 100%;
     padding: 0 ;
@@ -248,8 +246,5 @@ header.masthead .masthead-heading {
   .hide-phone {
     visibility: hidden;
   }
-  */
-  #btn-bio {
-    display: none;
-  }
 }
+*/
