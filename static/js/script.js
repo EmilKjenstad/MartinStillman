@@ -104,11 +104,14 @@ function populateService() {
 
     let s = `
             <div id="service`+i+`" class="row fs-2">
-              <div class="col-lg-6 service-img skills" style="background-image: url('static/assets/img/`+services[i].img+`');"></div>
-              <div class="service-item col-lg-6">
+              <div class="col-xl-6 service-img" style="background-image: url('static/assets/img/`+services[i].img+`');"></div>
+              <div class="col-xl-6 service-item">
                 <p class="fw-bolder" style="font-size: larger;">`+services[i].title+`</p>
                 <p>`+desc+`</p>
-                <a class="fs-1" role="button" data-bs-toggle="modal" service-id="`+i+`" data-bs-target="#exampleModal">Learn more</a>
+                <a class="fs-1" role="button" data-bs-toggle="modal" service-id="`+i+`" data-bs-target="#exampleModal">
+                <img style="width: 5%;" src="static/assets/icons/`+services[i].icon+`">
+                Learn more
+                </a>
               </div>
             </div>
       `

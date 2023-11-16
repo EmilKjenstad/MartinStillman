@@ -18,6 +18,7 @@ let services = [
     {
         title: "Skill Development and Training in Conflict Resolution",
         img: "2048_ba9479e53ffe9349342b0dd0da98c593.jpg",
+        icon: "skills.png",
         description: `
             As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people successfully navigate and resolve conflict.
             After years of ongoing experience as a Mediation and Conflict Resolution Officer in a large health system, Martin Stillman developed the Conflict Resolution and Facilitation Training program (©CRAFT) to advance the conflict resolution skills necessary to be successful in today’s complex healthcare environments. 
@@ -33,6 +34,7 @@ let services = [
     {
         title: "Mediation Services",
         img: "mediation-photo-2.jpg",
+        icon: "mediation.png",
         description: `
             Martin Stillman is a skilled mediator and facilitator who is available to provide mediation services, either in-person or virtually.
             Dr. Stillman currently serves as Hennepin Healthcare System's Mediation and Conflict Resolution Officer in Minneapolis, Minnesota and he has served as an invited coach and trainer for other mediation training programs as well. He has experience mediating one-on-one conflicts, small group issues, and conflicts involving large departments and/or systems. 
@@ -43,6 +45,7 @@ let services = [
     {
         title: "Executive Coaching and Leadership Development",
         img: "coaching.png",
+        icon: "coaching.png",
         description: `
             Martin Stillman provides executive coaching and leadership development.
             Dr. Stillman combines his extensive leadership and practical experience with an ability to teach and coach in working one-on-one with individuals seeking coaching and professional development. He honed these skills over years as an invited coach and educator for the University of California, San Francisco (UCSF) prestigious year-long physician leadership training program where he mentored physicians and other healthcare providers in their year-long experience. 
