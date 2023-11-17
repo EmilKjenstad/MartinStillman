@@ -146,12 +146,34 @@ hr.divider {
 }
 
 /*  HEADER */
+#landing-marty {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+#mast-content {
+  margin-left: 0;
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  #landing-marty {
+    z-index: 0;
+    left: 0;
+    width: 100%;  
+  } 
+  #mast-content {
+    width: 100%;
+  }
+}
 .landing-next {
   color: var(--bs-primary);
 }
 
 .landing-line {
-  width: 5rem;
+  max-width: 5rem !important;
   height: 0.2rem;
   border-radius: 1rem;
   background-color: var(--bs-primary);
