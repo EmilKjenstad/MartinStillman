@@ -148,12 +148,11 @@ hr.divider {
 
 /*  HEADER */
 .landing-icon {
-  background-color: #e0dcc8;
-  border: solid 0.25rem var(--bs-primary);
+  background-color: #e5cdaf;
 }
 
 .bg-landing {
-  background-color: #6699cc;
+  background-color: #bfcad6;
   background-attachment: fixed; /* control the parallax scrolling effect */
   background-position: center;
   background-repeat: no-repeat;
