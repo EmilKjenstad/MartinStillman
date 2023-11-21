@@ -1,6 +1,8 @@
 const test_bio = document.querySelector("#bio_content");
 
-test_bio.onscroll = function() {
+//test_bio.onscroll = function() {updateProg()}
+
+function updateProg() {
   const test_prog = document.querySelector("#prog-bio .progress-bar");
   
   var y = test_bio.scrollTop

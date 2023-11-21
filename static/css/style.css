@@ -169,7 +169,7 @@ hr.divider {
 }
 #mast-content {
   margin-left: 0;
-  width: 50%;
+  width: 60%;
 }
 @media (max-width: 1200px) {
   #landing-marty {
@@ -200,13 +200,19 @@ margin: 1.5rem auto;
 background-color: var(--bs-primary);
 opacity: 1;
 */
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
 
 header.masthead {
   height: 100vh;
   position: relative;
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
   color: black;
+  padding-top: 50px;
 }
 
 .masthead .bg-gradient {
@@ -220,7 +226,6 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
-  white-space: nowrap;
   font-size: 4rem;
   font-weight: 900;
   line-height: 4rem;

@@ -70,7 +70,6 @@ let testimonials = [
         extra: "Workshop Participant",
         quote: `
             Very practical information on how to navigate tough conversations within our organization.
-            some added extra text for overflow asdas asd sad asd sad as fa
         `,
     },
     {
