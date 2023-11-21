@@ -220,6 +220,7 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
+  white-space: nowrap;
   font-size: 4rem;
   font-weight: 900;
   line-height: 4rem;
