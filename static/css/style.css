@@ -19,7 +19,7 @@
   }
 }
 
-section {
+section, .footer {
   border-top: 0.5rem solid var(--bs-primary);
 }
 
@@ -231,6 +231,7 @@ header.masthead .masthead-heading {
 }
 /* FOOTER */
 .footer {
+  padding-top: 0.5rem;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -284,3 +285,19 @@ header.masthead .masthead-heading {
   }
 }
 */
+.mask {
+  -webkit-mask-image: url("../assets/img/landing4.png");
+  mask-image: url("../assets/img/landing4.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.contact-img {
+  min-height: 600px; /* Set a specific height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-attachment: scroll !important;
+  background-image: url("../assets/img/landing4.png"); 
+}
