@@ -39,7 +39,6 @@ section {
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
 }
 
@@ -148,12 +147,11 @@ hr.divider {
 
 /*  HEADER */
 .landing-icon {
-  background-color: #e0dcc8;
-  border: solid 0.25rem var(--bs-primary);
+  font-weight: 700;
 }
 
 .bg-landing {
-  background-color: #6699cc;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.5) 30%, var(--bs-primary));
   background-attachment: fixed; /* control the parallax scrolling effect */
   background-position: center;
   background-repeat: no-repeat;
@@ -191,7 +189,7 @@ hr.divider {
   max-width: 5rem !important;
   height: 0.2rem;
   border-radius: 1rem;
-  background-color: var(--bs-primary);
+  background-color: #e5cdaf;
   margin-left: auto;
   margin-right: auto;
 }
@@ -216,17 +214,16 @@ header.masthead {
 }
 
 header.masthead .masthead-subheading {
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 10px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
 }
 
 header.masthead .masthead-heading {
-  font-size: 3.25rem;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 3.25rem;
+  line-height: 4rem;
   margin-bottom: 5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .landing-service-icon {
@@ -236,7 +233,6 @@ header.masthead .masthead-heading {
 .footer {
   text-align: center;
   font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .footer .container * {
