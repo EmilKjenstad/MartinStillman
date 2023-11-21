@@ -10,6 +10,8 @@
   overflow-y: scroll;
   overflow-x: hidden;
   display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media (max-width: 1200px) {
   .bio-content {
