@@ -10,9 +10,21 @@
   overflow-y: scroll;
   overflow-x: hidden;
   display: block;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: calc(14px + 2rem);
+  padding-right: calc(0px + 2rem);
 }
+
+.bio-content::-webkit-scrollbar {
+  width: 14px;
+}
+
+.bio-content::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+
 @media (max-width: 1200px) {
   .bio-content {
   }
@@ -151,7 +163,13 @@ hr.divider {
 .landing-icon {
   font-weight: 900;
 }
-
+.landing-icon a {
+  text-decoration: none;
+  color: inherit;
+}
+.landing-icon:has(a:hover)  {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
 .bg-landing {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.5) 30%, var(--bs-primary));
   background-attachment: fixed; /* control the parallax scrolling effect */
