@@ -147,7 +147,7 @@ hr.divider {
 
 /*  HEADER */
 .landing-icon {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .bg-landing {
@@ -214,14 +214,14 @@ header.masthead {
 }
 
 header.masthead .masthead-subheading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   padding: 10px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 header.masthead .masthead-heading {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 4rem;
   margin-bottom: 5rem;
 }
