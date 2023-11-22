@@ -26,7 +26,7 @@
   <body class="bg-light" data-bs-spy="scroll" data-bs-target="#scrollspy-nav">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-xl bg-transparent navbar-light fixed-top" id="scrollspy-nav" style="transition: 0.25s;">
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="scrollspy-nav" style="transition: 0.25s;">
       <div class="container-fluid">
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
         </button>
 
         <div class="collapse justify-content-between navbar-collapse" id="navbarTogglerDemo01">
-          <a id="nav-title" class="navbar-brand fs-3 fst-italic fw-bolder" href="#sectionLanding">Mediating Conflict in Healthcare</a>
+          <a id="nav-title" class="navbar-brand fst-italic fw-bolder" href="#sectionLanding">Mediation, Conflict Resolution Training, and Coaching</a>
           
           <ul class="nav nav-pills navbar-nav my-2 my-lg-0 navbar-nav-scroll">
             <!--
@@ -73,65 +73,99 @@
       <div id=""              class="position-absolute top-0 start-0 w-100 h-100 paralaxMasthead" style="filter: blur(10px);"></div> <!-- img -->
       <div id="mast-gradient" class="position-absolute top-0 start-0 w-100 h-100 bg-landing" style="z-index: 1;"></div> <!-- Gradient -->
 
+      <!-- Button -->
+      <div class="position-absolute start-50 bottom-0" style="z-index: 3;">
+        <a class="landing-next" href="#sectionService">
+          <i class="bi bi-arrow-down-circle fs-1"></i>  
+        </a>
+      </div>
+
       <!-- Marty -->
       <div id="landing-marty">
-        <img class="h-100 " src="static/assets/img/mart_4.png" alt="">
+        <img class="" src="static/assets/img/mart_4.png" alt="">
       </div>
       
       <!-- CONTENT -->
-      <div id="mast-content" class="container px-3 position-relative" style="z-index: 2;">
+      <div id="mast-content" class="position-relative" style="z-index: 2;">
 
-        <div class="row">
-          <div class="col">
-            <p class="masthead-heading">Mediating Conflict in Healthcare</p>
-          </div>
-        </div>
+        <div class="container-fluid">
 
-        <div class="row">
-
-          <div class="landing-line"></div>
-          <p class="masthead-subheading m-0">Martin Stillman, MD, JD</p>
-          <div class="landing-line"></div>
-            
-        </div>
-
-        <div class="row justify-content-between">
-
-          <div class="col-md-4 landing-icon">
-            <a class="btn" href="#service0">
-              <img class="landing-service-icon" src="static/assets/icons/skills.png" alt="">
-              <h1 class="landing-icon">Skill Development</h1>
-            </a>
-          </div>
-
-          <div class="col-md-4 landing-icon">
-            <a class="btn" href="#service1">
-              <img class="landing-service-icon" src="static/assets/icons/mediation.png" alt="">
-              <h1 class="landing-icon">Mediation Services</h1>
-            </a>
-          </div>
-
-          <div class="col-md-4 landing-icon">
-            <a class="btn" href="#service2">
-              <img class="landing-service-icon" src="static/assets/icons/coaching.png" alt="">
-              <h1 class="landing-icon">Healthcare Executive Coaching</h1>
+          <div class="row">
+            <div class="col">
+              <p class="masthead-heading">Mediating Conflict in Healthcare</p>
             </div>
-          </a>
-
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <a class="landing-next" href="#sectionService">
-              <i class="bi bi-arrow-down-circle fs-1"></i>
-              
-            </a>
           </div>
-        </div>
 
-        
+          <div class="row">
+
+            <div class="landing-line"></div>
+            <p class="masthead-subheading m-0">Martin Stillman, MD, JD</p>
+            <div class="landing-line"></div>
+              
+          </div>
+
+          <span class="screen">
+            <div class="row justify-content-between ">
+
+              <div class="col-md-4">
+                <a class="landing-icon" href="#service0">
+                  <img class="" src="static/assets/icons/skills.png" alt="">
+                  <p class="">Skill Development</p>
+                </a>
+              </div>
+
+              <div class="col-md-4">
+                <a class="landing-icon" href="#service1">
+                  <img class="" src="static/assets/icons/mediation.png" alt="">
+                  <p class="">Mediation Services</p>
+                </a>
+              </div>
+
+              <div class="col-md-4">
+                <a class="landing-icon" href="#service2">
+                  <img class="" src="static/assets/icons/coaching.png" alt="">
+                  <p class="">Healthcare Executive Coaching</p>
+                </div>
+              </a>
+
+            </div>
+          </span>
+          
+          <span class="phone">
+
+            <div class="row">
+              <div class="col">
+                <a class="landing-icon" href="#service0">
+                  <img class="" src="static/assets/icons/skills.png" alt="">
+                  Skill Development
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <a class="landing-icon" href="#service1">
+                  <img class="" src="static/assets/icons/mediation.png" alt="">
+                  Mediation Services
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                  <a class="landing-icon" href="#service2">
+                  <img class="" src="static/assets/icons/coaching.png" alt="">
+                  Healthcare Executive Coaching
+                </a>
+              </div>
+            </div>
+
+        </span>
+
+        </div>
           
       </div>
+
     </header>
     
     <!-- Services -->
@@ -156,9 +190,9 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section id="sectionTestimonials" class="page-section parallaxTestimonial p-5 container-fluid bg-info">
+    <section id="sectionTestimonials" class="page-section parallaxTestimonial p-5">
 
-      <div class="container">
+      <div class="container-fluid">
 
         <h1>Testimonials</h1>
 
@@ -203,22 +237,9 @@
     <!-- CONTACT -->
     <section id="sectionContact" class="page-section">
       
-      <div class="container-fluid h-100 bg-primary">
-        <div class="row h-100">
+      <div id="contentContact" class="container-fluid h-100 bg-primary">
+        <div class="row">
           
-          <div class="col-xl-6 align-self-center ">
-
-            <div class="position-relative w-50 mx-auto my-auto p-0">
-              
-              <img class="rounded w-100" src="static/assets/img/martin-stillman-for-social-media-003-2.png" alt="" />
-              <div class="hide-phone rounded-bottom position-absolute bottom-0 bg-gradient w-100 p-3" style="z-index: 3;">
-                <h3>&mdash; Martin Stillman, MD, JD</h3>
-              </div>
-            
-            </div>
-          
-          </div>
-
           <div class="col text-center p-5 bg-light border rounded-start">
             
             <div class="row justify-content-center">
@@ -296,12 +317,24 @@
             
           </div>
           
+          <div class="col-xl-6 order-xl-first align-self-center p-5">
+
+            <div class="contact-image position-relative mx-auto">
+              
+              <img class="rounded" src="static/assets/img/martin-stillman-for-social-media-003-2.png" alt="" />
+              <div class="rounded-bottom position-absolute bottom-0 bg-gradient w-100 p-3" style="z-index: 3;">
+                <h3>&mdash; Martin Stillman, MD, JD</h3>
+              </div>
+            
+            </div>
+          
+          </div>
+
         </div>
 
       </div>
 
     </section>
-
 
     <!-- FOOTER -->
     <footer class="footer">

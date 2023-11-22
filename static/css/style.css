@@ -4,6 +4,14 @@
   line-height: 2.5rem;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
 .bio-content {
   width: 100%;
   height: 500px;
@@ -23,14 +31,6 @@
   background-clip: padding-box;
   border-radius: 9999px;
   background-color: #AAAAAA;
-}
-
-@media (max-width: 1200px) {
-  .bio-content {
-  }
-  #bio_container {
-    width: 100vw !important;
-  }
 }
 
 section, .footer {
@@ -69,7 +69,7 @@ hr.divider {
 }
 
 /* SERVICE */
-#sectionService > .row:nth-child(even) {
+#sectionService .row:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -86,20 +86,6 @@ hr.divider {
   background-attachment: scroll !important;
 }
 
-/*
-.service-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.service-img img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
-}
-*/
 .service-item {
   font-size: larger;
   padding: 64px !important;
@@ -160,47 +146,51 @@ hr.divider {
 }
 
 /*  HEADER */
-.landing-icon {
+.landing-icon p {
   font-weight: 900;
+  font-size: 2rem;
 }
-.landing-icon a {
-  text-decoration: none;
-  color: inherit;
+.landing-icon {
+  text-decoration: none !important;
+  color: inherit !important;
 }
-.landing-icon:has(a:hover)  {
+.col-md-4:has(.landing-icon:hover) {
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-.bg-landing {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.5) 30%, var(--bs-primary));
-  background-attachment: fixed; /* control the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: rotate(180deg);
+.landing-icon img {
+  width: 50%;
 }
 
+.bg-landing {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, var(--bs-primary));
+}
+.masthead .bg-gradient {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)) !important;
+}
 #landing-marty {
   z-index: 2;
+  overflow: hidden;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  width: 50%;
+  left: 60%;
+  width: 40%;
   height: 100%;
 }
+#landing-marty img {
+  height: 100%;
+}
+
 #mast-content {
   margin-left: 0;
   width: 60%;
 }
-@media (max-width: 1200px) {
-  #landing-marty {
-    z-index: 0;
-    left: 0;
-    width: 100%;  
-  } 
-  #mast-content {
-    width: 100%;
-  }
+
+#mast-content .row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
 .landing-next {
   color: var(--bs-primary);
 }
@@ -213,30 +203,12 @@ hr.divider {
   margin-left: auto;
   margin-right: auto;
 }
-/*
-height: 300px;
-max-width: 5rem;
-margin: 1.5rem auto;
-background-color: var(--bs-primary);
-opacity: 1;
-*/
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-}
 
 header.masthead {
   height: 100vh;
   position: relative;
   color: black;
-  padding-top: 50px;
-}
-
-.masthead .bg-gradient {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)) !important;
+  padding-top: 5rem;
 }
 
 header.masthead .masthead-subheading {
@@ -249,12 +221,10 @@ header.masthead .masthead-heading {
   font-size: 4rem;
   font-weight: 900;
   line-height: 4rem;
-  margin-bottom: 5rem;
 }
 
-.landing-service-icon {
-  margin-top: 5rem;
-}
+
+
 /* FOOTER */
 .footer {
   padding-top: 0.5rem;
@@ -266,64 +236,104 @@ header.masthead .masthead-heading {
   margin: 0;
 }
 
-/* MEDIA */
-.landing-service-icon {
-  width: 50%;
+/* CONTACT */
+.contact-image,
+.contact-image img {
+  margin: auto;
+  width: 500px;
 }
-@media (max-width: 992px) {
-  /* HEADER */
-  header.masthead {
-    padding-top: 4rem;
-    padding-bottom: 1rem;
+
+/* MEDIA */
+@media (max-width: 575px) {
+  .contact-image,
+  .contact-image img {
+      width: 100% !important;
   }
-  header.masthead .masthead-heading {
+  .contact-image h3 {
+    font-size: 1rem !important;
+  }
+
+  /* HEADER */
+  .landing-icon img {
+    height: 51px !important;
+    width: 51px !important;
+
+  }
+  .landing-icon {
+    margin: 0;
+    font-weight: 900;
     font-size: 2rem;
+  }
+
+  header.masthead .masthead-heading {
+    font-size: 3rem;
+    line-height: 3rem;
     font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  header.masthead .masthead-subheading {
+    font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 1rem;
   }
-  header.masthead .masthead-subheading {
+}
+@media (max-width: 767px) {
+  /* HEADER */
+  .landing-icon img {
+    height: 51px !important;
+    width: 51px !important;
+
+  }
+  .landing-icon {
+    margin: 0;
+    font-weight: 900;
     font-size: 2rem;
-    line-height: 1rem;
-    margin-bottom: 1rem;
   }
-  .landing-service-icon {
-    margin-top: 1.5rem;
-    width: 25%;
-  }
-  .landing-line {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-}
 
-/*
-@media (min-width: 1200px) {
+  .phone {
+    display: block !important;
+  }
+  .screen {
+    display: none !important;
+  }
+
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 1199px) {
+  /**** BIO ****/
   #bio_container {
+    width: 100% !important;
+    padding: 1rem ;
+  }
+
+  /**** HEADER ****/
+  .bg-landing {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  #landing-marty {
+    z-index: 0;
+    left: 0;
+    width: 100%;  
+  }
+  #mast-content {
     width: 100%;
-    padding: 0 ;
   }
-  #sectionService .row {
-    height: 100vh;
+  
+  /**** NAVBAR ****/
+  .navbar:has(div):has(.navbar-toggler[aria-expanded="true"]) {
+    background-color: var(--bs-primary) !important;
   }
-  .hide-phone {
-    visibility: hidden;
+  .navbar :is(.nav-link, .navbar-brand)
+   {
+    color: rgba(255, 255, 255, 0.75) !important;
   }
 }
-*/
-.mask {
-  -webkit-mask-image: url("../assets/img/landing4.png");
-  mask-image: url("../assets/img/landing4.png");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+
+.phone {
+  display: none;
 }
-
-.contact-img {
-  min-height: 600px; /* Set a specific height */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-attachment: scroll !important;
-  background-image: url("../assets/img/landing4.png"); 
+.screen {
+  display: block;
 }

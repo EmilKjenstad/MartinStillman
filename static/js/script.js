@@ -1,3 +1,4 @@
+const LARGE_WINDOW = 1199;
 const test_bio = document.querySelector("#bio_content");
 
 //test_bio.onscroll = function() {updateProg()}
@@ -38,16 +39,15 @@ function navCheck() {
   document.querySelector("#prog .progress-bar").style.width = (percentage*100) + "%"
 
   // used to be top-h
-  if(window.scrollY < 10 && screen.width > 1200) {
+  if(window.scrollY < 10 ) {
     // BG Color
-    nav.classList.add("bg-transparent")
     nav.classList.remove("bg-primary")
 
     //TEXT color
     nav.classList.add("navbar-light")
     nav.classList.remove("navbar-dark")
 
-    nav_title.classList.add("fs-3")
+//    nav_title.classList.add("fs-3")
 
     //prog.classList.add("visually-hidden")
 //    mast_blur.classList.add("bg-gradient")
@@ -58,13 +58,12 @@ function navCheck() {
   
     // BG Color
     nav.classList.add("bg-primary")
-    nav.classList.remove("bg-transparent")
 
     //TEXT color
     nav.classList.add("navbar-dark")
     nav.classList.remove("navbar-light")
 
-    nav_title.classList.remove("fs-3")
+//    nav_title.classList.remove("fs-3")
 
     //prog.classList.remove("visually-hidden")
 //    mast_blur.classList.remove("bg-gradient")
