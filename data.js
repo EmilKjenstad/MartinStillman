@@ -20,7 +20,7 @@ let services = [
         img: "2048_ba9479e53ffe9349342b0dd0da98c593.jpg",
         icon: "skills.png",
         description: `
-            As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people successfully navigate and resolve conflict.
+            As a skilled educator, Martin Stillman, MD, JD, is physician, lawyer, and mediator who conducts workshops and educational sessions to help people successfully navigate and resolve conflict.
             After years of ongoing experience as a Mediation and Conflict Resolution Officer in a large health system, Martin Stillman developed the Conflict Resolution and Facilitation Training program (©CRAFT) to advance the conflict resolution skills necessary to be successful in today’s complex healthcare environments. 
             Skill-building takes place through interactive, highly acclaimed workshops, and material can be tailored to meet the needs of your organization. 
             Topics have included:
@@ -36,7 +36,7 @@ let services = [
         img: "mediation-photo-2.jpg",
         icon: "mediation.png",
         description: `
-            Martin Stillman is a skilled mediator and facilitator who is available to provide mediation services, either in-person or virtually.
+            Martin Stillman, MD, JD, is a skilled mediator and facilitator who is available to provide mediation services, either in-person or virtually.
             Dr. Stillman currently serves as Hennepin Healthcare System's Mediation and Conflict Resolution Officer in Minneapolis, Minnesota and he has served as an invited coach and trainer for other mediation training programs as well. He has experience mediating one-on-one conflicts, small group issues, and conflicts involving large departments and/or systems. 
             Dr. Stillman respects the process of mediation, skillfully facilitating the defining of relevant issues and helping the parties collaboratively advance potential solutions to their collective concerns. He is proficient in creating safe spaces for conversations to take place and minimizing barriers to communications, actively helping those involved avoid unhealthy confrontation and ill will. 
             Contact Dr. Martin Stillman to explore how his mediation services can help you and your organization directly address troubling conflict that needs experienced and thoughtful intervention. 
@@ -47,7 +47,7 @@ let services = [
         img: "coaching.png",
         icon: "coaching.png",
         description: `
-            Martin Stillman provides executive coaching and leadership development.
+            Martin Stillman, MD, JD, provides executive coaching and leadership development.
             Dr. Stillman combines his extensive leadership and practical experience with an ability to teach and coach in working one-on-one with individuals seeking coaching and professional development. He honed these skills over years as an invited coach and educator for the University of California, San Francisco (UCSF) prestigious year-long physician leadership training program where he mentored physicians and other healthcare providers in their year-long experience. 
             His formal education in law and medicine, coupled with extensive knowledge of clinical, administrative, financial, personnel, and quality issues associated with medical practice, provides an experienced lens through which he is able to advise. Additionally, his mediation training, gift for teaching (he has received the prestigious University of Minnesota Medical School Outstanding Teaching Award), and relatable style lends itself to meaningful individual coaching and advancement of necessary leadership skills.
             Contact Dr. Martin Stillman to learn more about his availability for your executive coaching and leadership development needs.

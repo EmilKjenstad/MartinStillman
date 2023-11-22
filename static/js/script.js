@@ -14,9 +14,8 @@ function updateProg() {
   test_prog.style.width = percent + "%";
 }
 
-window.onscroll = function() {navCheck()} ;
 
-function navCheck() {
+var navCheck = function() {
 
 
 
@@ -72,6 +71,8 @@ function navCheck() {
   }
 }
 
+document.addEventListener('scroll', navCheck);
+
 
 //load when scroll to it?
 window.onload = function() {
@@ -108,7 +109,7 @@ window.onload = function() {
 }
 
 function populateTestimonials() {
-  var first = true;
+  var first = true; // use counter
   
   for (let i = 0; i<testimonials.length; i++ ) {
     var testimonial = testimonials[i];
@@ -121,7 +122,7 @@ function populateTestimonials() {
 
         <h3>`+ testimonial.extra +`</h3>
         <blockquote class="blockquote text-center">
-          <span class="shrink">`+ testimonial.quote +`</span>
+          <span class="shrink h-75">`+ testimonial.quote +`</span>
           <footer class="blockquote-footer">`+ testimonial.name +`, <cite title="Source Title">`+ testimonial.title +`</cite></footer>
         </blockquote>
 
@@ -183,8 +184,6 @@ function populateService() {
     document.getElementById("sectionService"). innerHTML += s;
   }
 }
-
-let show_more = false;
 
 function populateBio() {
   

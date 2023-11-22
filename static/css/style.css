@@ -1,4 +1,11 @@
 /* GENERAL */
+.phone {
+  display: none;
+}
+.screen {
+  display: block;
+}
+
 .shrink {
   font-size: 64px;
   line-height: 2.5rem;
@@ -20,6 +27,7 @@
   display: block;
   padding-left: calc(14px + 2rem);
   padding-right: calc(0px + 2rem);
+  text-align: justify;
 }
 
 .bio-content::-webkit-scrollbar {
@@ -120,6 +128,7 @@ hr.divider {
   width: 75vw;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.75);
+  font-size: calc(1.3rem + 0.6vw);
 }
 
 /*  PARALAX */
@@ -133,7 +142,6 @@ hr.divider {
 
 .paralaxMasthead {
   background-image: url("../assets/img/landing6.png");
-  
 }
 
 .parallaxTestimonial, .parallaxBio,
@@ -159,7 +167,7 @@ hr.divider {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 .landing-icon img {
-  width: 50%;
+  width: 40%;
 }
 
 .bg-landing {
@@ -187,8 +195,9 @@ hr.divider {
 }
 
 #mast-content .row {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  --distance: 4rem;
+  margin-top: var(--distance);
+  margin-bottom: var(--distance);
 }
 
 .landing-next {
@@ -212,7 +221,7 @@ header.masthead {
 }
 
 header.masthead .masthead-subheading {
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 10px;
   font-weight: 400;
 }
@@ -254,11 +263,6 @@ header.masthead .masthead-heading {
   }
 
   /* HEADER */
-  .landing-icon img {
-    height: 51px !important;
-    width: 51px !important;
-
-  }
   .landing-icon {
     margin: 0;
     font-weight: 900;
@@ -307,6 +311,9 @@ header.masthead .masthead-heading {
     width: 100% !important;
     padding: 1rem ;
   }
+  .bio-content {
+    text-align: left;
+  }
 
   /**** HEADER ****/
   .bg-landing {
@@ -331,9 +338,3 @@ header.masthead .masthead-heading {
   }
 }
 
-.phone {
-  display: none;
-}
-.screen {
-  display: block;
-}

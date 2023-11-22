@@ -1497,16 +1497,15 @@
       var shrink_size = parseInt(getComputedStyle(shrink_element).getPropertyValue('font-size'));
       var shrink_parent = shrink_element.parentElement;
       const parent_width = parseInt(getComputedStyle(shrink_parent).getPropertyValue('width'))
-      const parent_heigth = parseInt(getComputedStyle(shrink_parent).getPropertyValue('height'))
+      const parent_height = parseInt(getComputedStyle(shrink_parent).getPropertyValue('height'))
       
 
-      while( shrink_element.offsetWidth > parent_width || shrink_element.offsetHeight > parent_heigth )
+      while( shrink_element.offsetWidth > parent_width || shrink_element.offsetHeight > parent_height )
       {
         shrink_element.style.fontSize = shrink_size + "px"
+        shrink_element.style.lineHeight = shrink_size + "px"
         shrink_size -= 1
       }
-
-      shrink_element.shrinked = true;
 
     }
 
@@ -1609,7 +1608,7 @@
 
     for(const element of document.getElementsByClassName("shrink"))
     {
-      element.shrinked = false;
+      element.shrinked = false; //dont do this, reset font size to default value
       Carousel.resizeFont(element.parentElement)
     }
 
