@@ -302,6 +302,12 @@ header.masthead .masthead-heading {
     display: none !important;
   }
 
+  #mast-content .phone .row {
+    --distance-phone: 1rem;
+    margin-top: var(--distance-phone);
+    margin-bottom: var(--distance-phone);
+  }
+
 }
 @media (max-width: 991px) {
 }
