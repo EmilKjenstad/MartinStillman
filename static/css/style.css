@@ -167,11 +167,11 @@ hr.divider {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 .landing-icon img {
-  width: 40%;
+  width: 25%;
 }
 
 .bg-landing {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, var(--bs-primary));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, #0d6efd);
 }
 .masthead .bg-gradient {
   background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)) !important;
@@ -195,7 +195,7 @@ hr.divider {
 }
 
 #mast-content .row {
-  --distance: 4rem;
+  --distance: 8rem;
   margin-top: var(--distance);
   margin-bottom: var(--distance);
 }
@@ -206,7 +206,7 @@ hr.divider {
 
 .landing-line {
   max-width: 5rem !important;
-  height: 0.2rem;
+  height: 0.4rem;
   border-radius: 1rem;
   background-color: #e5cdaf;
   margin-left: auto;
