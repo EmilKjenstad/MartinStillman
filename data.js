@@ -33,7 +33,7 @@ let services = [
     },
     {
         title: "Mediation Services",
-        img: "mediation-photo-2.jpg",
+        img: "med2.jpg",
         icon: "mediation.png",
         description: `
             Martin Stillman, MD, JD, is a skilled mediator and facilitator who is available to provide mediation services, either in-person or virtually.
@@ -44,7 +44,7 @@ let services = [
     },
     {
         title: "Executive Coaching and Leadership Development",
-        img: "coaching.png",
+        img: "coach.webp",
         icon: "coaching.png",
         description: `
             Martin Stillman, MD, JD, provides executive coaching and leadership development.
@@ -57,33 +57,81 @@ let services = [
 
 let testimonials = [
     {
-        name: "Someone famous",
-        title: "Source Title",
-        extra: "Workshop Participant",
+        name:  "CRAFT workshop participant",
+        title: "",
+        extra: "",
+        quote: `
+            Fantastic session. Marty's leadership is outstanding.
+        `,
+    },
+    {
+        name:  "CRAFT workshop participant",
+        title: "",
+        extra: "",
+        quote: `
+            This is so valuable!!
+        `,
+    },
+    {
+        name:  "CRAFT workshop participant",
+        title: "",
+        extra: "",
+        quote: `
+            I appreciate your creating a safe space - well done.
+        `,
+    },
+    {
+        name:  "CRAFT workshop participant",
+        title: "",
+        extra: "",
+        quote: `
+            Discussions were amazing and helpful.
+        `,
+    },
+    {
+        name:  "CRAFT workshop participant",
+        title: "",
+        extra: "",
+        quote: `
+            I am very appreciative of this program. Leadership, like all, is an opportunistic journey.
+        `,
+    },
+    {
+        name:  "CRAFT workshop participant",
+        title: "",
+        extra: "",
+        quote: `
+            Dr. Stillman's approach to thinking things out and providing a framework to everything is amazing.
+        `,
+    },
+    {
+        name: "Workshop participant",
+        title: "",
+        extra: "",
         quote: `
             Great exercise!
         `,
     },
     {
-        name: "Someone famous",
-        title: "Source Title",
-        extra: "Workshop Participant",
+        name: "Workshop participant",
+        title: "",
+        extra: "",
         quote: `
             Very practical information on how to navigate tough conversations within our organization.
         `,
     },
     {
-        name: "Someone famous",
-        title: "Source Title",
-        extra: "Workshop Participant",
+        name: "Workshop participant",
+        title: "",
+        extra: "",
         quote: `
             Excellent - best of the conference so far.
         `,
     },
     {
-        name: "Someone famous",
-        title: "Source Title",
-        extra: "Workshop Participant",
+        name: "Workshop participant",
+        title: "",
+        extra: "",
         quote: `
             Great group activity!
         `,
