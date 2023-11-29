@@ -58,7 +58,7 @@ let services = [
 let testimonials = [
     {
         name:  "CRAFT workshop participant",
-        title: "asdafsgasdsa d asds",
+        title: "",
         quote: `
             Fantastic session. Marty's leadership is outstanding.
         `,
