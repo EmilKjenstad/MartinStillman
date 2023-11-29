@@ -7,8 +7,9 @@
 }
 
 .shrink {
+  height: 200px;
   font-size: 64px;
-  line-height: 2.5rem;
+  line-height: 64px;
 }
 
 .vertical-center {
@@ -42,7 +43,7 @@
 }
 
 section, .footer {
-  border-top: 0.5rem solid #e5cdaf;
+  border-top: 0.5rem solid var(--bs-secondary);
 }
 .service:not(:first-child) {
   border-top: 0.25rem solid #e0dcc8;

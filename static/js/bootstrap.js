@@ -1604,15 +1604,6 @@
    * ------------------------------------------------------------------------
    */
 
-  window.onresize = function() {
-
-    for(const element of document.getElementsByClassName("shrink"))
-    {
-      element.shrinked = false; //dont do this, reset font size to default value
-      Carousel.resizeFont(element.parentElement)
-    }
-
-  };
   EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, Carousel.dataApiClickHandler);
   EventHandler.on(window, EVENT_LOAD_DATA_API$2, () => {
     const carousels = SelectorEngine.find(SELECTOR_DATA_RIDE);

@@ -58,8 +58,7 @@ let services = [
 let testimonials = [
     {
         name:  "CRAFT workshop participant",
-        title: "",
-        extra: "",
+        title: "asdafsgasdsa d asds",
         quote: `
             Fantastic session. Marty's leadership is outstanding.
         `,
@@ -67,7 +66,6 @@ let testimonials = [
     {
         name:  "CRAFT workshop participant",
         title: "",
-        extra: "",
         quote: `
             This is so valuable!!
         `,
@@ -75,7 +73,6 @@ let testimonials = [
     {
         name:  "CRAFT workshop participant",
         title: "",
-        extra: "",
         quote: `
             I appreciate your creating a safe space - well done.
         `,
@@ -83,7 +80,6 @@ let testimonials = [
     {
         name:  "CRAFT workshop participant",
         title: "",
-        extra: "",
         quote: `
             Discussions were amazing and helpful.
         `,
@@ -91,7 +87,6 @@ let testimonials = [
     {
         name:  "CRAFT workshop participant",
         title: "",
-        extra: "",
         quote: `
             I am very appreciative of this program. Leadership, like all, is an opportunistic journey.
         `,
@@ -99,7 +94,6 @@ let testimonials = [
     {
         name:  "CRAFT workshop participant",
         title: "",
-        extra: "",
         quote: `
             Dr. Stillman's approach to thinking things out and providing a framework to everything is amazing.
         `,
@@ -107,7 +101,6 @@ let testimonials = [
     {
         name: "Workshop participant",
         title: "",
-        extra: "",
         quote: `
             Great exercise!
         `,
@@ -115,7 +108,6 @@ let testimonials = [
     {
         name: "Workshop participant",
         title: "",
-        extra: "",
         quote: `
             Very practical information on how to navigate tough conversations within our organization.
         `,
@@ -123,7 +115,6 @@ let testimonials = [
     {
         name: "Workshop participant",
         title: "",
-        extra: "",
         quote: `
             Excellent - best of the conference so far.
         `,
@@ -131,7 +122,6 @@ let testimonials = [
     {
         name: "Workshop participant",
         title: "",
-        extra: "",
         quote: `
             Great group activity!
         `,

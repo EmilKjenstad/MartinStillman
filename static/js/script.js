@@ -72,9 +72,10 @@ var navCheck = function() {
 }
 
 document.addEventListener('scroll', navCheck);
+window.addEventListener('resize', fixFontSize);
 
 
-//load when scroll to it?
+//load content when scroll to it?
 window.onload = function() {
 
   try {
@@ -106,6 +107,7 @@ window.onload = function() {
   } catch (error) {
     console.log("ERROR CONTACT");
   }
+  fixFontSize()
 }
 
 function populateTestimonials() {
@@ -114,16 +116,20 @@ function populateTestimonials() {
   for (let i = 0; i<testimonials.length; i++ ) {
     var testimonial = testimonials[i];
     
+    let footer = testimonial.name;
+    if (testimonial.title) footer +=  ", " + testimonial.title;
+
     let first_item = "";
     if (first) first_item = "active";
 
     let t = `
-      <div class="carousel-item `+first_item+`">
+      <div class="carousel-item `+first_item+`" data-bs-interval="10000000">
 
-        <h3>`+ testimonial.extra +`</h3>
         <blockquote class="blockquote text-center">
-          <span class="shrink h-75">"`+ testimonial.quote.trim() +`"</span>
-          <footer class="blockquote-footer">`+ testimonial.name +`, <cite title="Source Title">`+ testimonial.title +`</cite></footer>
+          <div class="blockquote-content">
+            <span class="shrink">"`+ testimonial.quote.trim() +`"</span>
+          </div>
+          <footer class="blockquote-footer">`+ footer +`</footer>
         </blockquote>
 
       </div>
@@ -258,3 +264,30 @@ document.getElementById('btn-contact').onclick = function () {
   var pos = document.querySelector('#sectionContact').getBoundingClientRect();
   window.scrollTo(0, window.scrollY+pos.top);
 }
+
+
+function resizeFont(e) {
+  const shrink_element = e.querySelector(".shrink")
+  
+
+  var shrink_size = parseInt(getComputedStyle(shrink_element).getPropertyValue('font-size'));
+  var shrink_parent = shrink_element.parentElement;
+  const parent_width = parseInt(getComputedStyle(shrink_parent).getPropertyValue('width'))
+  const parent_height = parseInt(getComputedStyle(shrink_parent).getPropertyValue('height'))
+  
+
+  while( shrink_element.offsetWidth > parent_width || shrink_element.offsetHeight > parent_height )
+  {
+    shrink_element.style.fontSize = shrink_size + "px"
+    shrink_element.style.lineHeight = shrink_size + "px"
+    shrink_size -= 1
+  }
+
+}
+
+
+
+function fixFontSize() {
+  let e = document.querySelector(".carousel-item.active");
+  resizeFont(e.parentElement)
+};
