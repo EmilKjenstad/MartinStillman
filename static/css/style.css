@@ -171,12 +171,6 @@ hr.divider {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.screen .landing-icon:hover:before {
-  content: "sdsdsdf";
-  display: block;
-  background: url(separador.png) center center no-repeat;
-  height: 29px;
-}
 .landing-icon img {
   width: 25%;
 }
@@ -205,9 +199,12 @@ hr.divider {
   width: 60%;
 }
 
-#mast-content .row {
+#mast-content .row:not(:first-child) {
   --distance: 149px;
   margin-top: var(--distance);
+}
+#mast-content .row:not(:last-child) {
+  --distance: 149px;
   margin-bottom: var(--distance);
 }
 
@@ -313,10 +310,17 @@ header.masthead .masthead-heading {
     display: none !important;
   }
 
-  #mast-content .phone .row {
-    --distance-phone: 1rem;
-    margin-top: var(--distance-phone);
-    margin-bottom: var(--distance-phone);
+  .phone .row {
+    --distance-phone-icon: 1rem;
+    margin-top: var(--distance-phone-icon) !important;
+    margin-bottom: var(--distance-phone-icon) !important;
+  }
+
+  #mast-content .row:not(:first-child) {
+    margin-top: 4rem;
+  }
+  #mast-content .row:not(:last-child) {
+    margin-bottom: 4rem;
   }
 
 }
