@@ -7,9 +7,10 @@
 }
 
 .shrink {
+  --shrink-size: 35px;
   height: 200px;
-  font-size: 64px;
-  line-height: 64px;
+  font-size: var(--shrink-size);
+  line-height: var(--shrink-size);
 }
 
 .vertical-center {
@@ -46,7 +47,7 @@ section, .footer {
   border-top: 0.5rem solid var(--bs-secondary);
 }
 .service:not(:first-child) {
-  border-top: 0.25rem solid #e0dcc8;
+  border-top: 0.375rem solid #e0dcc8;
 }
 
 .page-section h1 {
@@ -133,6 +134,14 @@ hr.divider {
   margin: auto;
   background-color: rgba(255, 255, 255, 0.75);
   font-size: calc(1.3rem + 0.6vw);
+}
+.bio-portrait {
+  min-height: 100%; /* Set a specific height */
+  background-attachment: scroll; /* control the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/img/Hero-Portrait.png");
 }
 
 /*  PARALAX */
@@ -329,10 +338,6 @@ header.masthead .masthead-heading {
 }
 @media (max-width: 1199px) {
   /**** BIO ****/
-  #bio_container {
-    width: 100% !important;
-    padding: 1rem ;
-  }
   .bio-content {
     text-align: left;
   }
@@ -360,6 +365,12 @@ header.masthead .masthead-heading {
   }
 }
 
+@media (max-width: 1299px){
+  #bio_container {
+    width: 100% !important;
+    padding: 1rem ;
+  }
+}
 
 .bg-nav {
   background-color: #e5cdaf;
