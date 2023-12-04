@@ -5840,8 +5840,8 @@ textarea.form-control-lg {
 .carousel-control-next-icon {
   filter: invert(1) grayscale(100);
   display: inline-block;
-  width:  1rem;
-  height: 1rem;
+  width:  3rem;
+  height: 3rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 200% 200%;

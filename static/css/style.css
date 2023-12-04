@@ -1,3 +1,14 @@
+.bg-gradient-light {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.bio-img {
+  height: 500px;
+}
+.bio-img, .bio-img img {
+  margin: auto;
+}
+
 /* GENERAL */
 .phone {
   display: none;
@@ -133,7 +144,7 @@ hr.divider {
   width: 75vw;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.75);
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: 1.5rem;
 }
 .bio-portrait {
   min-height: 100%; /* Set a specific height */
@@ -191,12 +202,14 @@ hr.divider {
 .masthead .bg-gradient {
   background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)) !important;
 }
+.start-60 {
+  left: 60%;
+}
+
 #landing-marty {
   z-index: 2;
   overflow: hidden;
   position: absolute;
-  bottom: 0;
-  left: 60%;
   width: 40%;
   height: 95%;
 }
@@ -205,8 +218,7 @@ hr.divider {
 }
 
 #mast-content {
-  margin-left: 0;
-  width: 60%;
+  width: 69%;
 }
 
 #mast-content .row:not(:first-child) {
@@ -239,13 +251,13 @@ header.masthead {
 }
 
 header.masthead .masthead-subheading {
-  font-size: 3rem;
+  font-size: 60px;
   padding: 10px;
   font-weight: 400;
 }
 
 header.masthead .masthead-heading {
-  font-size: 4rem;
+  font-size: 72px;
   font-weight: 900;
   line-height: 4rem;
 }
