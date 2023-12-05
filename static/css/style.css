@@ -1,5 +1,16 @@
+.resume-section:not(:first-child) {
+  border-top: 0.5rem solid var(--bs-secondary);
+  margin-top: 1rem;
+  padding-top: 2rem;
+}
+
+.resume-section .row {
+  margin-bottom: 1rem;
+}
+
 .bg-gradient-light {
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  background:         rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 40px 40px rgba(255,255,255, 0.5);
 }
 
 .bio-img {
@@ -54,7 +65,7 @@
   background-color: #AAAAAA;
 }
 
-section, .footer {
+.page-section, .footer {
   border-top: 0.5rem solid var(--bs-secondary);
 }
 .service:not(:first-child) {
@@ -168,8 +179,12 @@ hr.divider {
   background-image: url("../assets/img/landing6.png");
 }
 
+.parallaxResume {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/res.jpg");
+}
+
 .parallaxTestimonial, .parallaxBio,
-.paralaxMasthead {
+.paralaxMasthead, .parallaxResume {
   min-height: 100%; /* Set a specific height */
   background-attachment: fixed; /* control the parallax scrolling effect */
   background-position: center;
@@ -193,7 +208,7 @@ hr.divider {
 }
 
 .landing-icon img {
-  width: 25%;
+  width: 36%;
 }
 
 .bg-landing {
@@ -257,7 +272,7 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
-  font-size: 72px;
+  font-size: 75px;
   font-weight: 900;
   line-height: 4rem;
 }

@@ -162,11 +162,12 @@
   const getSelectorFromElement = element => {
     const selector = getSelector(element);
 
-    if (selector) {
+    try {
       return document.querySelector(selector) ? selector : null;
     }
-
-    return null;
+    catch { 
+      return null;
+    }
   };
 
   const getElementFromSelector = element => {

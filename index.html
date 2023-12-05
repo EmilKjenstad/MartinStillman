@@ -37,27 +37,35 @@
           <a id="nav-title" class="navbar-brand fst-italic fw-bolder" href="#sectionLanding">Mediation, Conflict Resolution Training, and Coaching</a>
           
           <ul class="nav nav-pills navbar-nav my-2 my-lg-0 navbar-nav-scroll">
-            <!--
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#sectionService" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="0" data-bs-target="#exampleModal">Skill development and Training in Conflict Resolution</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="1" data-bs-target="#exampleModal">Mediation Services</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="2" data-bs-target="#exampleModal">Executive Coaching and Leadership Development</a></li>
-              </ul>
-            </li>
-            -->
             
-            <li class="nav-item"><a class="nav-link" href="./about.html">Learn More</a></li>
+            
             <li class="nav-item"><a class="nav-link" href="#sectionService">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#sectionBio">Biography</a></li>
             <li class="nav-item"><a class="nav-link" href="#sectionTestimonials">Testimonials</a></li>
             <li class="nav-item"><a class="nav-link" href="#sectionContact">Contact</a></li>
 
+            <li class="nav-item"><a class="nav-link" href="#">|</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">Resume</a></li>
+            <!--
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#sectionService" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Options
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="0" data-bs-target="#exampleModal">Services</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="1" data-bs-target="#exampleModal">Biography</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="2" data-bs-target="#exampleModal">Testimonials</a></li>
+                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="2" data-bs-target="#exampleModal">Contact</a></li>
+              </ul>
+            </li>
+            -->
+            
+              
           </ul>
           
         </div>
@@ -72,22 +80,22 @@
     <header id="sectionLanding" class="masthead vertical-center text-center">
       
       <div id=""              class="position-absolute top-0 start-0 w-100 h-100 paralaxMasthead" style="filter: blur(10px);"></div> <!-- img -->
-      <div id="mast-gradient" class="position-absolute top-0 start-0 w-100 h-100 bg-landing" style="z-index: 1;"></div> <!-- Gradient -->
+      <div id="mast-gradient" class="position-absolute top-0 start-0 w-100 h-100 bg-landing" style="z-index: 1; transform: rotate(180deg);"></div> <!-- Gradient -->
 
       <!-- Button -->
       <div class="position-absolute start-50 bottom-0" style="z-index: 3;">
-        <a class="landing-next" href="#sectionService">
+        <a id="landing-next-section" class="landing-next">
           <i class="bi bi-arrow-down-circle fs-1"></i>  
         </a>
       </div>
 
       <!-- Marty -->
-      <div id="landing-marty" class="start-60 bottom-0">
-        <img class="" src="static/assets/img/Hero-Portrait.png" alt="">
+      <div id="landing-marty" class="start-0 bottom-0">
+        <img class="" src="static/assets/img/Hero-Image-2.png" alt="">
       </div>
       
       <!-- CONTENT -->
-      <div id="mast-content" class="position-relative ms-0" style="z-index: 2;">
+      <div id="mast-content" class="position-absolute end-0" style="z-index: 2;">
 
         <div class="container-fluid">
 
@@ -106,26 +114,26 @@
           </div>
 
           <span class="screen">
-            <div class="row justify-content-between ">
+            <div class="row pe-5 justify-content-between bg-gradient-light rounded">
 
-              <div class="col-md-4">
+              <div class="col-md-4 py-3">
                 <a class="landing-icon" href="#service0">
                   <img class="" src="static/assets/icons/skills.png" alt="">
-                  <p class="">Skill</br>Development</p>
+                  <p class="mb-0">Conflict Resolution Education</p>
                 </a>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-4 py-3">
                 <a class="landing-icon" href="#service1">
                   <img class="" src="static/assets/icons/mediation.png" alt="">
-                  <p class="">Mediation</br>Services</p>
+                  <p class="mb-0">Mediation</br>Services</p>
                 </a>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-4 py-3">
                 <a class="landing-icon" href="#service2">
                   <img class="" src="static/assets/icons/coaching.png" alt="">
-                  <p class="">Healthcare Executive Coaching</p>
+                  <p class="mb-0">Healthcare Executive Coaching</p>
                 </div>
               </a>
 
@@ -138,7 +146,7 @@
               <div class="col">
                 <a class="landing-icon" href="#service0">
                   <img class="" src="static/assets/icons/skills.png" alt="">
-                  Skill Development
+                  Conflict Resolution Education
                 </a>
               </div>
             </div>
@@ -369,6 +377,7 @@
 
     <script src="data.js"></script> <!-- DATA -->
     <script src="static/js/script.js"></script> <!-- own JavaScript -->
+    <script src="static/js/index.js"></script> <!-- Display Data -->
     <script src="static/js/bootstrap.js"></script> <!-- Bootstrap JavaScript -->
 
   </body>

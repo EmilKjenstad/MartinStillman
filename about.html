@@ -23,7 +23,7 @@
 
     <title>Martin Stillman</title>
   </head>
-  <body class="bg-light" data-bs-spy="scroll" data-bs-target="#scrollspy-nav">
+  <body class="bg-light">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="scrollspy-nav" style="transition: 0.25s;">
@@ -37,26 +37,38 @@
           <a id="nav-title" class="navbar-brand fst-italic fw-bolder" href="#sectionLanding">Mediation, Conflict Resolution Training, and Coaching</a>
           
           <ul class="nav nav-pills navbar-nav my-2 my-lg-0 navbar-nav-scroll">
-            <!--
+
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#sectionService" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Services
+                Table of Contents
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="0" data-bs-target="#exampleModal">Skill development and Training in Conflict Resolution</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="1" data-bs-target="#exampleModal">Mediation Services</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-wrap" data-bs-toggle="modal" service-id="2" data-bs-target="#exampleModal">Executive Coaching and Leadership Development</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-0">EDUCATION/TRAINING</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-1">POSTDOCTORAL TRAINING</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-2">ACADEMIC APPOINTMENTS</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-3">CLINICAL/HOSPITAL APPOINTMENTS</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-4">CERTIFICATION AND LICENSURE</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-5">SELECT HONORS AND AWARDS</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-6">MEMBERSHIPS AND OFFICES IN PROFESSIONAL SOCIETIES</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-7">TEACHING, COACHING, MENTORING ACTIVITIES</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-8">SELECT EXTRAMURAL INVITED PRESENTATIONS</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-9">COMMITTEE AND ADMINISTRATIVE SERVICE</a></li>
+                <li><a class="dropdown-item text-wrap" href="#section-10">ANNOTATED BIBLIOGRAPHY</a></li>
               </ul>
             </li>
-            -->
-            
-            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Biography</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sectionService">Resume</a></li>
+
+            <!--
+              
+              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="./index.html#sectionBio">Biography</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              
+            -->
           </ul>
           
         </div>
@@ -71,22 +83,22 @@
     <header id="sectionLanding" class="masthead vertical-center text-center">
       
       <div id=""              class="position-absolute top-0 start-0 w-100 h-100 paralaxMasthead" style="filter: blur(10px);"></div> <!-- img -->
-      <div id="mast-gradient" class="position-absolute top-0 start-0 w-100 h-100 bg-landing" style="z-index: 1; transform: rotate(180deg);"></div> <!-- Gradient -->
+      <div id="mast-gradient" class="position-absolute top-0 start-0 w-100 h-100 bg-landing" style="z-index: 1;"></div> <!-- Gradient -->
 
       <!-- Button -->
       <div class="position-absolute start-50 bottom-0" style="z-index: 3;">
-        <a class="landing-next" href="#sectionService">
+        <a id="landing-next-section" class="landing-next">
           <i class="bi bi-arrow-down-circle fs-1"></i>  
         </a>
       </div>
 
       <!-- Marty -->
-      <div id="landing-marty" class="start-0 bottom-0">
-        <img class="" src="static/assets/img/Hero-Image-2.png" alt="">
+      <div id="landing-marty" class="start-60 bottom-0">
+        <img class="" src="static/assets/img/Hero-Portrait.png" alt="">
       </div>
       
       <!-- CONTENT -->
-      <div id="mast-content" class="position-absolute end-0" style="z-index: 2;">
+      <div id="mast-content" class="position-absolute" style="z-index: 2;">
 
         <div class="container-fluid">
 
@@ -104,32 +116,11 @@
               
           </div>
 
-          <span class="screen">
-            <div class="row justify-content-between bg-gradient-light">
-
-              <div class="col-md-4">
-                <a class="landing-icon" href="#service0">
-                  <img class="" src="static/assets/icons/skills.png" alt="">
-                  <p class="">Skill</br>Development</p>
-                </a>
-              </div>
-
-              <div class="col-md-4">
-                <a class="landing-icon" href="#service1">
-                  <img class="" src="static/assets/icons/mediation.png" alt="">
-                  <p class="">Mediation</br>Services</p>
-                </a>
-              </div>
-
-              <div class="col-md-4">
-                <a class="landing-icon" href="#service2">
-                  <img class="" src="static/assets/icons/coaching.png" alt="">
-                  <p class="">Healthcare Executive Coaching</p>
-                </div>
-              </a>
-
+          <div class="row">
+            <div class="col">
+              <a href="./index.html" class="btn btn-secondary">Go Back</a>
             </div>
-          </span>
+          </div>
           
         </div>
           
@@ -137,29 +128,653 @@
 
     </header>
         
-    <!-- Bio -->
-    <section id="sectionBio" class="page-section parallaxBio position-relative">
+    <!-- resume -->
+    <section id="" class="page-section parallaxResume position-relative">
 
       <div id="bio_container" class="">
-        
-        <h1>Biography</h1>
-        <hr class="divider">
-        
-        <div class="row">
+
+        <!-- EDUCATION/TRAINING -->
+        <section id="section-0" class="resume-section">
+
+          <h1>EDUCATION/TRAINING</h1>
+          <hr class="divider">
           
-          <div class="col-lg-auto align-self-center">
-            <div class="bio-img mx-auto">
-              <img class="h-100" src="static/assets/img/Biography-Portrait.png" alt="">
-            </div>
+          <div class="row">
+            <div class="col-3">1997 MD</div>
+            <div class="col">University of Minnesota Medical School, Minneapolis, Minnesota</div>
           </div>
 
-          <div class="col">
-            <div id="bio_content" class="bio-content"></div>
+          <div class="row">
+            <div class="col-3">1993 JD</div>
+            <div class="col">University of Minnesota Law School, Minneapolis, Minnesota</div>
           </div>
-        </div>
-    
+
+          <div class="row">
+            <div class="col-3">2011</div>
+            <div class="col">General Skills Mediation Training, Hamline University School of Law, St. Paul, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2016 </div>
+            <div class="col">Leadership Coaching for the University of California San Francisco’s (UCSF) year-long fellowship program for clinician leaders</div>
+          </div>
+
+        </section>
+
+        <!-- POSTDOCTORAL TRAINING -->
+        <section id="section-1" class="resume-section">
+
+          <h1>POSTDOCTORAL TRAINING</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2000-2001</div>
+            <div class="col">Chief Resident, Internal Medicine, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1998-2000</div>
+            <div class="col">Internal Medicine Residency, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1997-1998</div>
+            <div class="col">Internship, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+        </section>
+
+        <!-- ACADEMIC APPOINTMENTS -->
+        <section id="section-2" class="resume-section">
+
+          <h1>ACADEMIC APPOINTMENTS</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2012-Present</div>
+            <div class="col">Associate Professor of Medicine, University of Minnesota Medical School, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005-2012</div>
+            <div class="col">Assistant Professor of Medicine, University of Minnesota Medical School, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2001-2005</div>
+            <div class="col">Instructor of Medicine, University of Minnesota Medical School, Minneapolis, Minnesota</div>
+          </div>
+
+        </section>
+
+        <!-- CLINICAL/HOSPITAL APPOINTMENTS -->
+        <section id="section-3" class="resume-section">
+
+          <h1>CLINICAL/HOSPITAL APPOINTMENTS</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2022-Present</div>
+            <div class="col">Director of Provider Wellness and Retention, Department of Medicine, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2018-2022</div>
+            <div class="col">Vice Chair, Office of Department and Faculty Affairs, Department of Medicine, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2015-Present</div>
+            <div class="col">Mediation & Conflict Resolution Officer, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2013-2017</div>
+            <div class="col">Assistant Chief of Medicine, Outpatient Services, Department of Medicine, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2015</div>
+            <div class="col">Senior Medical Director, Medicine and Medicine Sub Specialty Clinics, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2009-2017</div>
+            <div class="col">Clinic Medical Director, Medicine Clinic, Hennepin County Medical Center, Minneapolis, Minnesota </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2001-Present</div>
+            <div class="col">Staff Physician, Division of General Internal Medicine, Department of Medicine, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+        </section>
+
+        <!-- CERTIFICATION AND LICENSURE -->
+        <section id="section-4" class="resume-section">
+
+          <h1>CERTIFICATION AND LICENSURE</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2000-Present</div>
+            <div class="col">State License, Minnesota Board of Medical Practice</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1995-Present</div>
+            <div class="col">State License, Minnesota Attorney License</div>
+          </div>
+
+        </section>
+
+        <!-- SELECT HONORS AND AWARDS -->
+        <section id="section-5" class="resume-section">
+
+          <h1>SELECT HONORS AND AWARDS</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2017</div>
+            <div class="col">Recipient, Harold S. Diehl Award, University of Minnesota Medical School. This prestigious lifetime award is granted to individuals who have made outstanding professional contributions to the Medical School, the University, and the community.</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010</div>
+            <div class="col">University of Minnesota Outstanding Medical School Teaching Award</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005</div>
+            <div class="col">American College of Legal Medicine (ACLM) President’s Award</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2004</div>
+            <div class="col">Distinguished Service Recognition, American College of Legal Medicine</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1997</div>
+            <div class="col">Minnesota Medical Foundation Resident Distinguished Teaching Award</div>
+          </div>
+
+        </section>
+        
+        <!-- MEMBERSHIPS AND OFFICES IN PROFESSIONAL SOCIETIES -->
+        <section id="section-6" class="resume-section">
+
+          <h1>MEMBERSHIPS AND OFFICES IN PROFESSIONAL SOCIETIES</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2014-2019</div>
+            <div class="col">Board Member, Medicine and Health Board of Overseers, University of Minnesota Foundation, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2013-2014</div>
+            <div class="col">President Elect, Executive Committee of the American College of Legal Medicine Board of Governors</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2012-2013</div>
+            <div class="col">Treasurer, Executive Committee of the American College of Legal Medicine Board of Governors</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2011-2012</div>
+            <div class="col">Secretary, Executive Committee of the American College of Legal Medicine Board of Governors</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-Present</div>
+            <div class="col">Fellow, American College of Physicians</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2018</div>
+            <div class="col">Member, Association of Chiefs and Leaders in Internal Medicine (ACLGIM)</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005-2017</div>
+            <div class="col">President, Board of Directors, Minnesota Medical Alumni Society</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005-2014</div>
+            <div class="col">Ex-Officio Board Member, Minnesota Medical Foundation</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005-2012</div>
+            <div class="col">Chair, Membership Committee, American College of Legal Medicine</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005-2011</div>
+            <div class="col">Board of Governors (elected), American College of Legal Medicine</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2003-Present</div>
+            <div class="col">Member, Society of General Internal Medicine</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2003-2010</div>
+            <div class="col">Member, American College of Physicians</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2000-Present</div>
+            <div class="col">Fellow, American College of Legal Medicine</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1998-2005</div>
+            <div class="col">Board Member, University of Minnesota Medical Alumni Society</div>
+          </div>
+
+        </section>
+        
+        <!-- TEACHING, COACHING, MENTORING ACTIVITIES -->
+        <section id="section-7" class="resume-section">
+
+          <h1>TEACHING, COACHING, MENTORING ACTIVITIES</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2016-2017</div>
+            <div class="col">Course Instructor, Advanced Training in Health Care Mediation, American Arbitration Association, New York, New York </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2016 </div>
+            <div class="col">Leadership Coach and Advisor for the UCSF-IPC year-long Fellowship Program for Clinician Leaders, University of California San Francisco, California</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2013-Present</div>
+            <div class="col">Coach for Hamline University School of Law Dispute Resolution Institute Civil Mediation Training, St. Paul, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2007-2018</div>
+            <div class="col">Advisor for Joint Degree Program students in University of Minnesota Joint Degree Program in Law, Health & the Life Sciences, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2007</div>
+            <div class="col">Lecturer, Introduction to the Business of Health Care. Hamline University School of Law, St. Paul, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2001-Present</div>
+            <div class="col">Developer and Instructor, Legal Medicine Curriculum, Pre-Clinical Years, University of Minnesota Medical School, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2015</div>
+            <div class="col">Speaker, “Regulating Personal Health Information” Seminar, University of Minnesota Law School, Minneapolis, Minnesota</div>
+          </div>
+
+        </section>
+
+        <!-- SELECT EXTRAMURAL INVITED PRESENTATIONS -->
+        <section id="section-8" class="resume-section">
+
+          <h1>SELECT EXTRAMURAL INVITED PRESENTATIONS</h1>
+          <hr class="divider">
+          
+          <h2>National</h2>
+
+          <ol>
+            <li>Invited Panelist, “Workforce Wellness in Primary Care.”  Grand Rounds: Reimaging Primary Care in an Era of Opportunity Series, Harvard Medical School Center for Primary Care, March 2023. </li>
+            <li>Invited Speaker, “Promoting Wellness Through Skill Building: Proficient Conflict Resolution.” Stanford University Medicine WellMD Educational Lecture Series Virtual Forum, February 2023.  </li>
+            <li>Invited Speaker and Panelist, “Dual-Degrees in Law and Medicine.” Asian Pacific American Medical Student Association (RUAPAMSA) Dual-Degree Conference, Rutgers University, April 2021. </li>
+            <li>Workshop Co-Leader, “How to Approach and Resolve Conflict in a Constantly Changing Healthcare Environment.” Society of General Internal Medicine (SGIM) Annual Meeting, Martin Stillman, Read Pierce, Washington, DC, May 2019.</li>
+            <li>Invited Speaker, “Healthcare Dispute Trends and Innovative Conflict Resolution.”  American Bar Association Health Law Section and Chicago Medical Society, Physicians Legal Issues Conference, Chicago, Illinois, June 2018.</li>
+            <li>Invited Speaker, “The Impact of Physician Burnout on Medical Liability.” Physician Insurers Association of America (PIAA) 2018 CEO/COO Meeting, Scottsdale, Arizona, March 2018.</li>
+            <li>Invited Speaker, “Communication and Medical Malpractice.” Hillcrest Healthcare System 2017 Winter CME Update, Copper Mountain, Colorado, January 2017.</li>
+            <li>Invited Speaker, “Innovative Conflict Resolution in Hospitals and Health Networks.”  2016 American Arbitration Association (AAA) Healthcare Dispute Resolution Innovation and Strategy Conference, Scottsdale, Arizona, November 2016.</li>
+            <li>Moderator, “Current Controversies in Pediatrics.” American College of Legal Medicine Annual Meeting, Austin, Texas, February 2016.</li>
+            <li>Moderator, “Medical Malpractice Update.”  American College of Legal Medicine Annual Meeting, Las Vegas, Nevada, February 2015.</li>
+            <li>Moderator, “Legal Medicine: Where will the Road Lead.”  American College of Legal Medicine Annual Meeting - Stewart Reuter Lecture, Dallas, Texas, February 2014.</li>
+            <li>Speaker and Moderator, Professional Development Lunch in Law and Medicine Session. American College of Legal Medicine Annual Meeting, New Orleans, Louisiana, February 2013.</li>
+            <li>Moderator, “Updates in Medical Malpractice.” American College of Legal Medicine Annual Meeting - Law and Medicine Update, New Orleans, Louisiana, February 2012. </li>
+            <li>Moderator, “Ethics, Medicine and Health Law.” American College of Legal Medicine Annual Meeting-Medicine and Law for Healthcare Professionals, Las Vegas, Nevada, February 2011. </li>
+            <li>Speaker, “Effective Communication: A Critical Factor in Malpractice Risk Management and High Quality Patient Care.” American College of Legal Medicine, Las Vegas, Nevada, 2009.</li>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, Houston, Texas, 2008.</li>
+            <li>Program Co-Chair, American College of Legal Medicine (ACLM) 2008 Mid-Year Meeting. Also, Moderator Session I - Reimbursement Issues; Session III – Documentation/Privacy; and Session VI – Law and Business School 101 for Primary Care Clinicians, Chicago, Illinois, 2008.</li>
+            <ul><li>With Co-Chair, developed the program areas of study and collaborated with presenters as a moderator to disseminate the content of this 1.5 day, 11 hour CME/CLE program to 100 attendees.</li></ul>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, Orlando, Florida, 2007.</li>
+            <li>Speaker, “Handing Off the Patient: Addressing a Liability Risk and a Patient Safety Concern.”  Premier’s Annual Breakthrough Conference and Exhibition, Orlando, Florida, 2007.</li>
+            <li>Speaker, “Effective Communication: The Backbone of High Quality Patient Care and Malpractice Risk Management.”  Lockton Companies Health Care Fall Conference 2007, Kansas City, Missouri, 2007.</li>
+            <ul><li>Nursing CME, CLE, CPHQ and ASHRM credit for participants</li></ul>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, Las Vegas, Nevada, 2006.</li>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, San Diego, California, 2005.</li>
+            <li>Speaker, “Medical Error.”  American College of Legal Medicine, San Diego, California, 2005.</li>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, Las Vegas, Nevada, 2004.</li>
+            <li>Speaker, “Colon Cancer and Medical Malpractice.”  American College of Legal Medicine Annual Meeting, Las Vegas, Nevada, 2004.</li>
+            <li>Speaker, “Cancer and the Law.”  American College of Legal Medicine, New Orleans, Louisiana, 2004.</li>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, Phoenix, Arizona, 2003.</li>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, Las Vegas, Nevada, 2002.</li>
+            <li>Speaker and Moderator, Professional Development in Law and Medicine Session. American College of Legal Medicine Annual Meeting, Atlanta, Georgia, 2001.</li>
+          </ol>
+
+          <h2>Local</h2>
+
+          <ol>
+            <li>Invited Moot Court Judge, William E. McGee Civil Rights Moot Court Competition, Mitchell Hamline School of Law, Saint Paul, Minnesota, March 2, 2023.  </li>
+            <li>Invited Moderator, “Physician Wellness in a Pandemic.” Minnesota Medical Association Virtual Physician CME Forum, Minneapolis, Minnesota, August 2020.</li>
+            <li>Invited Speaker, “How to Approach and Resolve Conflict in Today’s Challenging Health Care Environment.” Minnesota Hospital Association Health Care Leadership Institute, Stepping Up, Standing Out Conference, Plymouth, Minnesota, March 2020.</li>
+            <li>Invited Panelist, “Setting the Stage: What was the ACA designed to do and how was it designed to work? What really happened and what parts were actually passed?” The Future of Healthcare Reform. Mitchell Hamline School of Law, Health, Law Institute Symposium, Saint Paul, Minnesota, February 2020.</li>
+            <li>Invited Panelist, “Warren v. Dinter: Is the era of the curbside consult over?” All Faculty Education Noon Conference, Hennepin Healthcare, Minneapolis, Minnesota, June 2019.</li>
+            <li>Invited Speaker, “Turning the Tide on Physician Burnout.” Presented with Sandra Shallcross, PhD, LP at the Minnesota Medical Association 2016 Annual Conference, St. Louis Park, Minnesota, September 2016.</li>
+            <li>Invited Panelist, “Navigating Worldviews & Cultural Conflicts.” Mediation Center, Hamline University School of Law Dispute Resolution Institute, St. Louis Park, Minnesota, June 2016.</li>
+            <li>Speaker, “Communication and Medical Malpractice.” American College of Physicians, Minnesota Chapter Scientific Meeting, Minneapolis, Minnesota, November 2015. </li>
+            <li>Understanding and Avoiding Medical Malpractice Claims: Perspectives from Plaintiff and Defense Attorneys, Medicine Grand Rounds, Hennepin County Medical Center, Minneapolis, Minnesota, April 2015.</li>
+            <li>Legal Medicine, Grand Rounds. Hennepin County Medical Center, Minneapolis, Minnesota, 2012.</li>
+            <li>Speaker, “Medical Education into the Future: Landscape Drivers.”  Presented with Dr. Arpana Vidyarthi at the Best of Hennepin Conference. Hennepin County Medical Center, Minneapolis, Minnesota, 2009.</li>
+            <li>Core Curriculum noon conference, Medical Malpractice. Hennepin County Medical Center, Minneapolis, Minnesota, 2008.</li>
+            <li>Effective Communication: A Critical Factor in Malpractice Risk Management and High Quality Patient Care, Medicine Grand Rounds, Hennepin County Medical Center, Minneapolis, Minnesota, 2008.</li>
+            <li>Speaker, “Did Vioxx Cause This Heart Attack? Understanding the Science of COX-2 Inhibitors and Cardiovascular Risk to Better Pursue or Defend These Cases.”  2007 Medical Malpractice Conference, Minneapolis, Minnesota, 2007.</li>
+            <ul><li>Course was approved to receive CLE credit for participants</li></ul>
+            <li>How to Minimize Your Risk of Being Sued and Injuring Patients: Risk Management Principles and Practices. University of Minnesota in cooperation with the Minnesota Medical Foundation, CME Presentation, Minneapolis, Minnesota, 2007.</li>
+            <li>Speaker and Theme Leader, “An Intentional Conversation about Conflict Resolution in Health Care.”  Hamline University School of Law, Health Law Institute 2007 Symposium, St. Paul, Minnesota, 2007.</li>
+            <li>Core Curriculum noon conference, Risk Management. Hennepin County Medical Center, Minneapolis, Minnesota, 2005.</li>
+            <li>Panelist, Medical Errors and Improving Quality Care. On Doctoring Program, University of Minnesota Medical School, Minneapolis, Minnesota, 2004.</li>
+            <li>Medical Malpractice. Medicine Grand Rounds, Abbott Northwestern Hospital, Minneapolis, Minnesota, 2003.</li>
+            <li>Medical Malpractice. ACP Minnesota Chapter Annual Scientific Meeting, Northland Inn, Brooklyn Park, Minnesota, 2003.</li>
+            <li>Medical Malpractice. Ground Rounds, Hennepin County Medical Center, Minneapolis, Minnesota, 2002.</li>
+          </ol>
+
+          <h2>Media Interviews</h2>
+
+          <ol>
+            <li>“Physician Burnout and Its Impact on Medical Liability,” feature article. Interview with Catherine E. Williams & Janet S. Puro, MD Advisor-A Publication of MDAdvantage Insurance Company, Lawrenceville, New Jersey, Winter 2019.</li>
+            <li>“Good Question: What does stress do to our bodies?”  WCCO Channel 4, Minneapolis, Minnesota, October 2015.</li>
+            <li>“Medicine and The Law,” feature article. Minnesota Medicine, Minneapolis, Minnesota, September 2015. </li>
+            <li>“Double Play,” feature article. Interview with Kim Kiser, Minnesota Medicine, Minneapolis, Minnesota, June 2005. </li>
+          </ol>
+
+        </section>
+
+        <!-- COMMITTEE AND ADMINISTRATIVE SERVICE (added note to fix)-->
+        <section id="section-9" class="resume-section">
+
+          <h1>COMMITTEE AND ADMINISTRATIVE SERVICE</h1>
+          <hr class="divider">
+          
+          <div class="row">
+            <div class="col-3">2021-2022</div>
+            <div class="col">Member, University of Minnesota Medical School Faculty Advisory Council (MS-FAC), Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2020-2023</div>
+            <div class="col">Member, Minnesota COVID-19 Ethics Collaborative Committee (MCED), convened by The Minnesota Department of Health (MDH), State Health Care Coordination Center (SHCCC), Minnesota Hospital Association (MHA), and the University of Minnesota, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2017-Present</div>
+            <div class="col">Assistant Director, Office of Professional Worklife, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2016-2021</div>
+            <div class="col">Member, Disclosure Work Group, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2015-Present</div>
+            <div class="col">Council Member, American Arbitration Association (AAA), Healthcare Dispute Resolution Advisory Council, Charlotte, North Carolina</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2015-2017</div>
+            <div class="col">Member, Office of Professional Worklife, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2014-2019</div>
+            <div class="col">Board Member, Medicine and Health Board of Overseers, University of Minnesota Foundation, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2013-Present</div>
+            <div class="col">Member, Claims Management & Disposition Committee, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2012-2018</div>
+            <div class="col">Member, Clinical Practice Committee, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2012-Present</div>
+            <div class="col">Member, Physician Search Committee, General Medicine Division, Hennepin Healthcare, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2012-2017</div>
+            <div class="col">Member, Primary Care Behavioral Health Organizational Group (PCBH), Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2012-2014</div>
+            <div class="col">Member, Community Transformation Grant Leadership Team (CTG), Hennepin County Public Health, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2012-2013</div>
+            <div class="col">Chair, Vibrant Clinic Design Group (VCDG), General Medicine Division, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2012</div>
+            <div class="col">Invited Chair, University of Minnesota Medical School Search Committee for Associate Dean of Admissions, Minneapolis, Minnesota </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2017</div>
+            <div class="col">Member, University of Minnesota Medical School and Minnesota Medical Foundation Honors and Awards Committee, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2017</div>
+            <div class="col">Member, Ambulatory Care Quality Committee, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2014</div>
+            <div class="col">Member, Ambulatory DYAD Leadership Committee (ADLC), Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2014</div>
+            <div class="col">Nurse Practitioner and Physician Assistant Collaborative Engagement workgroup, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010-2011</div>
+            <div class="col">Member, Coordinated Care Delivery System (CCDS) Steering Committee, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010</div>
+            <div class="col">Member, General Internal Medicine Division Finance Committee, Department of Medicine, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010</div>
+            <div class="col">Consultant for Free the Children Baraka Healthcare Clinic in rural Kenya</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010</div>
+            <div class="col">Member, Clinic Opiate Review and Management Committee, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2010</div>
+            <div class="col">Coordinated Care Delivery System (CCDS) Retreat Collaborator, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2009-2017</div>
+            <div class="col">Chair, Firm Practice Committee, General Medicine Division, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2009</div>
+            <div class="col">Member, Patient Experience Steering Committee, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2008-2009</div>
+            <div class="col">Member, Medicine Clinic Workflow Committee, General Medicine Division, Department of Medicine, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2007-Present</div>
+            <div class="col">Member, Program Evaluation Committee (PEC), Department of Medicine, Hennepin County Medical Center, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2007-Present</div>
+            <div class="col">Advisory Board Member, Health Law Institute, Mitchell Hamline University School of Law, St. Paul, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2006-2018</div>
+            <div class="col">Advisory Board Member, Joint Degree Program in Law and Values in Health, Environment and the Life Sciences, University of Minnesota, Minneapolis, Minnesota</div>
+          </div>
+
+          <!-- FIX -->
+          <div class="row">
+            <div class="col-3">2006-2012</div>
+            <div class="col">Elected Board Member, Hennepin Faculty Associates Board of Directors, Minneapolis, Minnesota <small>Elected to three 2-year terms</small></div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005-2018</div>
+            <div class="col">Advisory Committee Member, Minnesota Medicine, Monthly Publication, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2005-2014</div>
+            <div class="col">Board of Trustees, Minnesota Medical Foundation, University of Minnesota, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2004-2018 </div>
+            <div class="col">Member, Herzl Summer Camp Association Board of Directors, Minneapolis, Minnesota and Co-Medical Director 2005-2009</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2004-2007</div>
+            <div class="col">Board Member, Jewish Family and Children’s Service, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2004-2005</div>
+            <div class="col">Member, Core Curriculum Seminar Steering Committee, Graduate Medical Education, University of Minnesota, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2003</div>
+            <div class="col">Chair, Young Leadership Committee, American College of Legal Medicine, Schaumburg, Illinois</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2002-2005</div>
+            <div class="col">Member, Physician and Society Steering Committee, University of Minnesota, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">2000-2001</div>
+            <div class="col">Member, Marketing Committee, American College of Legal Medicine, Schaumburg, Illinois</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1992-1997</div>
+            <div class="col">Board Member, Health and Safety Committee, Herzl Summer Camp Association, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1991-1992</div>
+            <div class="col">Assistant Counselor and Caretaker Volunteer, St. Ann’s Residence, Catholic Charities, Minneapolis, Minnesota</div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">1990-1991</div>
+            <div class="col">Member, Sports and Entertainment Law Student Organization, University of Minnesota Law School, Minneapolis, Minnesota</div>
+          </div>
+
+        </section>
+
+        <!-- ANNOTATED BIBLIOGRAPHY -->
+        <section id="section-10" class="resume-section">
+
+          <h1>ANNOTATED BIBLIOGRAPHY</h1>
+          <hr class="divider">
+          
+          <h2>Peer-Reviewed Publications</h2>
+
+          <ol>
+            <li>Linzer M, Jin JO, Shah P, Stillman M, Brown R, Poplau S, Nankivil N, Cappelucci K, Sinsky CA. Trends in clinician burnout with associated mitigating and aggravating factors during the COVID-19 pandemic. JAMA Health Forum. 2022;3(11):e224163.</li>
+            <li>Sinsky C, Brown RL, Stillman MJ, Linzer M. COVID-Related Stress and Work Intentions in a Sample of US Health Care Workers. Mayo Clin Proc Innov Qual Outcomes. 2021;5(6):1165-1173. </li>
+            <li>Prasad K, McLoughlin C, Stillman M, Poplau S, Goelz E, Taylor S, Nankivil N, Brown R, Linzer M, Cappelucci K, Barbouche M, Sinsky CA. Prevalence and correlates of stress and burnout among U.S. Healthcare workers during the COVID-19 pandemic: A national cross-sectional survey study. EClinicalMedicine. 2021;35: 100879. DOI: 10.1016/j.eclinm.2021.100879.</li>
+            <li>Brady KJS, Ni P, Carlasare L, Shanafelt TD, Sinsky, CA, Linzer M, Stillman M, Trockel MT. Establishing Crosswalks Between Common Measures of Burnout in US Physicians. J Gen Intern Med. 2021:1-8. https://doi.org/10.1007/s11606-021-06661-4.</li>
+            <li>Linzer M, Stillman M, Brown R, Taylor S, Nankivil N, Poplau S, Goelz E, Sinsky C. American Medical Association-Hennepin Healthcare System coping with CI. Preliminary report: US physician stress during the early days of the COVID-19 pandemic. Mayo Clin Proc Innov Qual Outcomes. 2021;5(1):127-136.</li>
+            <li>Menon, NK, Shanafelt TD, Sinsky CA, Linzer, M, Carlasare L, Brady KJS, Stillman MJ, Trockel, MT. Association of Physician Burnout With Suicidal Ideation and Medical Errors. JAMA Netw Open. 2020:3(12):e2028780. </li>
+            <li>Goelz E, Audi C, Poplau S, Freese R, Linzer M, Stillman M. The BETER tool: a mentorship intervention for addressing burnout in medicine department providers. Physician Leadersh J. 2019. In press.</li>
+            <li>Cryer B, Li CM, Simon LS, Singh G, Stillman MJ, Berger MF. GI-REASONS: A Novel 6-Month, Prospective, Randomized, Open-Label, Blinded Endpoint (PROBE) Trial. Am J Gastroenterol. 2013; 108:392-400.</li>
+              <ul>
+                <li>Contribution: Participated in background research, conceptual design of manuscript content, drafting of manuscript and critical revision.</li>
+                <li>Citation Index: 0</li>
+                <li>Journal’s Impact Factor: 7.553</li>
+              </ul>
+            <li>Stillman MJ, Stillman TM. Choosing nonselective NSAIDS and selective COX-2 inhibitors in the elderly. A clinical use pathway. Geriatrics. 2007; 62(2):26-34.</li>
+              <ul>
+                <li>Contribution: Participated in background research, conceptual design of manuscript content, drafting of manuscript and critical revision.</li>
+                <li>Citation Index: 8</li>
+                <li>Journal’s Impact Factor: 1.101</li>
+              </ul>
+            <li>Stillman MJ, Stillman TM. Appropriate use of NSAIDS. Considering cardiovascular disease in the elderly. Geriatrics. 2007; 62(3):16-21.</li>
+              <ul>
+                <li>Contribution: Participated in background research, conceptual design of manuscript content, drafting of manuscript and critical revision.</li>
+                <li>Citation Index: 1</li>
+                <li>Journal’s Impact Factor: 1.101</li>
+              </ul>
+            <li>Chan FK, Cryer B, Goldstein JL, Lanas A,  Peura DA, Scheiman JM,  Simon LS, Singh G,  Stillman MJ, Wilcox CM, Berger MF, Brezna A, and Dodge W. A Novel Composite Endpoint to Evaluate the Gastrointestinal (GI) Effects of Nonsteroidal Anti-inflammatory Drugs through the Entire GI Tract. J Rheum. 2010; 37:167-174.</li>
+            <ul>
+              <li>Contribution: Participated in conception and design, analysis and interpretation of data in study which incorporated a novel composite endpoint for gastrointestinal effects of nonsteroidal anti-inflammatory drugs. Assisted in writing and editing manuscript which describes this novel composite endpoint. </li>
+              <li>Citation Index: 8</li>
+              <li>Journal’s Impact Factor: 3.551</li>
+            </ul>
+          </ol>
+
+          <h2>Non Peer-Reviewed Publications</h2>
+
+          <ol>
+            <li>Stillman M. Who should be making the decisions? Medical Economics. Letter to editor, December 16, 2005.</li>
+            <li>Stillman M. A Difference of Degrees. JAMA. 2003;290(9):1135-1136.</li>
+          </ol>
+
+          <h2>Editorships/Journal Reviewer</h2>
+
+          <ol>
+            <li>Manuscript Review. “Clinician Distress and Inappropriate Antibiotic Prescribing for Acute Respiratory Tract Infections: A Retrospective Cohort Study.” The Joint Commission Journal on Quality and Patient Safety, Manuscript Number: JCJQPS-D-21-00163, July 2021. </li>
+          </ol>
+
+        </section>
+
       </div>
-      
+    
     </section>
 
     <!-- FOOTER -->
@@ -173,24 +788,6 @@
 
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fs-1" id="exampleModalLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          
-          <div class="modal-body fs-4"></div>
-
-          <div class="modal-footer">
-            <button id="btn-contact" type="button" class="btn btn-primary btn-lg" data-bs-dismiss="modal">Contact Dr. Stillman</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="data.js"></script> <!-- DATA -->
     <script src="static/js/script.js"></script> <!-- own JavaScript -->
