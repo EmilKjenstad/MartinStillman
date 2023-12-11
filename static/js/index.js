@@ -100,7 +100,7 @@ function populateService() {
                 <p class="fw-bolder" style="font-size: larger;">`+services[i].title+`</p>
                 <p>`+desc+`</p>
                 <a class="fs-1" role="button" data-bs-toggle="modal" service-id="`+i+`" data-bs-target="#exampleModal">
-                <img style="width: 5%;" src="static/assets/icons/`+services[i].icon+`">
+                <img class="service-icon" src="static/assets/icons/`+services[i].icon+`">
                 Learn more
                 </a>
               </div>
