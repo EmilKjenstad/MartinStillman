@@ -178,7 +178,7 @@ hr.divider {
 }
 
 .parallaxTestimonial {
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/landing.webp");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5)), url("../assets/img/res.jpg");
 }
 
 .paralaxMasthead {
@@ -229,7 +229,6 @@ hr.divider {
 
 #landing-marty {
   z-index: 2;
-  overflow: hidden;
   position: absolute;
   width: 40%;
   height: 95%;

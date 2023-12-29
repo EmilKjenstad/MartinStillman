@@ -20,15 +20,16 @@ let services = [
         img: "2048_ba9479e53ffe9349342b0dd0da98c593.jpg",
         icon: "skills.png",
         description: `
-            As a skilled educator, Martin Stillman, MD, JD, is physician, lawyer, and mediator who conducts workshops and educational sessions to help people successfully navigate and resolve conflict.
-            After years of ongoing experience as a Mediation and Conflict Resolution Officer in a large health system, Martin Stillman developed the Conflict Resolution and Facilitation Training program (©CRAFT) to advance the conflict resolution skills necessary to be successful in today’s complex healthcare environments. 
-            Skill-building takes place through interactive, highly acclaimed workshops, and material can be tailored to meet the needs of your organization. 
-            Topics have included:
+            As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people learn how to successfully navigate and resolve conflict.
+            After years of ongoing experience as a Mediation and Conflict Resolution Officer in a large health system, Martin Stillman developed the Conflict Resolution and Facilitation Training program (©CRAFT) to advance the conflict resolution skills necessary to be successful in today’s complex healthcare environments.
+            Skill-building takes place through interactive, highly acclaimed workshops, and material can be tailored to meet the needs of your organization.
+            Topics include, but are not limited to:
                 - Effective Conflict Resolution Through Self-Discovery: Understanding Your Tendencies, Strengths, and Challenges in Approaching Conflict
                 - How to Discover Interests vs. Positions to Move Your Conflict Resolution Skills Forward
                 - Having the Difficult Conversation: Developing Strategies and Techniques to Successfully Approach the Difficult Conversation
-                - Group Dynamics and Interactions: Why Can't We all Just Get Along? Learning How Others Affect Us and We Affect Others in Resolving Conflict
-            Contact Dr. Martin Stillman to learn how his skill development and training programs can help you and your organization. 
+                - Group Dynamics and Interactions: Why Can’t We all Just Get Along? Learning How Others Affect Us and We Affect Others in Resolving Conflict
+            From small team retreats to large interactive conference sessions, Dr. Stillman is well-versed at working with groups of all sizes.
+            Contact Dr. Martin Stillman to learn how his skill development and training programs can help you and your organization.
         `
     },
     {
@@ -44,11 +45,12 @@ let services = [
     },
     {
         title: "Executive Coaching and Leadership Development",
-        img: "coach.webp",
+        img: "coach.png",
         icon: "coaching.png",
         description: `
-            Martin Stillman, MD, JD, provides executive coaching and leadership development.
-            Dr. Stillman combines his extensive leadership and practical experience with an ability to teach and coach in working one-on-one with individuals seeking coaching and professional development. He honed these skills over years as an invited coach and educator for the University of California, San Francisco (UCSF) prestigious year-long physician leadership training program where he mentored physicians and other healthcare providers in their year-long experience. 
+            Martin Stillman provides executive coaching and leadership development.
+            Dr. Stillman combines his extensive leadership and practical experience with an ability to teach and coach in working one-on-one with individuals seeking coaching and professional development. He honed these skills over years as an invited coach and educator for the University of California, San Francisco (UCSF) prestigious year-long physician leadership training program where he mentored physicians and other healthcare providers in their year-long experience.
+            Leaders may seek coaching when struggling to advance a cohesive team or department, resolve conflicts among colleagues at all levels, or see their way through sequencing challenging but necessary actions or making difficult decisions.
             His formal education in law and medicine, coupled with extensive knowledge of clinical, administrative, financial, personnel, and quality issues associated with medical practice, provides an experienced lens through which he is able to advise. Additionally, his mediation training, gift for teaching (he has received the prestigious University of Minnesota Medical School Outstanding Teaching Award), and relatable style lends itself to meaningful individual coaching and advancement of necessary leadership skills.
             Contact Dr. Martin Stillman to learn more about his availability for your executive coaching and leadership development needs.
         `
