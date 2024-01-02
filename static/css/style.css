@@ -1,5 +1,7 @@
-.service-icon {
-  width: 5%;
+/* RESUME */
+.blockquote span:before,
+.blockquote span:after {
+ content: '"';
 }
 
 .resume-section:not(:first-child) {
@@ -12,21 +14,16 @@
   margin-bottom: 1rem;
 }
 
+
+/* GENERAL */
 .bg-gradient-light {
   background:         rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 40px 40px rgba(255,255,255, 0.5);
 }
 
-.bio-img {
-  height: 500px;
+.service-icon {
+  width: 5%;
 }
-.bio-img, .bio-img img {
-  margin: auto;
-}
-.bio-img img {
-  height: 100%;
-}
-/* GENERAL */
 .phone {
   display: none;
 }
@@ -47,28 +44,6 @@
 
   display: flex;
   align-items: center;
-}
-
-.bio-content {
-  width: 100%;
-  height: 500px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  display: block;
-  padding-left: calc(14px + 2rem);
-  padding-right: calc(0px + 2rem);
-  text-align: justify;
-}
-
-.bio-content::-webkit-scrollbar {
-  width: 14px;
-}
-
-.bio-content::-webkit-scrollbar-thumb {
-  border: 4px solid rgba(0, 0, 0, 0);
-  background-clip: padding-box;
-  border-radius: 9999px;
-  background-color: #AAAAAA;
 }
 
 .page-section, .footer {
@@ -156,6 +131,28 @@ hr.divider {
 }
 
 /* BIO */
+.bio-content {
+  width: 100%;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  padding-left: calc(14px + 2rem);
+  padding-right: calc(0px + 2rem);
+  text-align: justify;
+}
+
+.bio-content::-webkit-scrollbar {
+  width: 14px;
+}
+
+.bio-content::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+
 #bio_container {
   padding: 3rem;
   width: 75vw;
@@ -172,16 +169,27 @@ hr.divider {
   background-image: url("../assets/img/Hero-Portrait.png");
 }
 
+.bio-img {
+  height: 500px;
+}
+.bio-img, .bio-img img {
+  margin: auto;
+}
+.bio-img img {
+  height: 100%;
+}
+
+
 /*  PARALAX */
 .parallaxBio {
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/bio_img.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/conference.jpg");
 }
 
 .parallaxTestimonial {
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5)), url("../assets/img/res.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5)), url("../assets/img/landing4.png");
 }
 
-.paralaxMasthead {
+.parallaxMasthead {
   background-image: url("../assets/img/landing6.png");
 }
 
@@ -190,7 +198,7 @@ hr.divider {
 }
 
 .parallaxTestimonial, .parallaxBio,
-.paralaxMasthead, .parallaxResume {
+.parallaxMasthead, .parallaxResume {
   min-height: 100%; /* Set a specific height */
   background-attachment: fixed; /* control the parallax scrolling effect */
   background-position: center;
@@ -223,14 +231,11 @@ hr.divider {
 .masthead .bg-gradient {
   background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)) !important;
 }
-.start-60 {
-  left: 60%;
-}
+
 
 #landing-marty {
   z-index: 2;
   position: absolute;
-  width: 40%;
   height: 95%;
 }
 #landing-marty img {
@@ -242,11 +247,11 @@ hr.divider {
 }
 
 #mast-content .row:not(:first-child) {
-  --distance: 149px;
+  --distance: 100px;
   margin-top: var(--distance);
 }
 #mast-content .row:not(:last-child) {
-  --distance: 149px;
+  --distance: 100px;
   margin-bottom: var(--distance);
 }
 
@@ -283,7 +288,6 @@ header.masthead .masthead-heading {
 }
 
 
-
 /* FOOTER */
 .footer {
   padding-top: 0.5rem;
@@ -295,12 +299,14 @@ header.masthead .masthead-heading {
   margin: 0;
 }
 
+
 /* CONTACT */
 .contact-image,
 .contact-image img {
   margin: auto;
   width: 500px;
 }
+
 
 /* MEDIA */
 @media (max-width: 400px) {
@@ -355,6 +361,10 @@ header.masthead .masthead-heading {
     margin: 0;
     font-weight: 900;
     font-size: 2rem;
+  }
+
+  #landing-marty {
+    overflow: hidden;
   }
 
   .phone {
@@ -414,21 +424,9 @@ header.masthead .masthead-heading {
     display: none !important;
   }
 }
-
 @media (max-width: 1299px){
   #bio_container {
     width: 100% !important;
     padding: 1rem ;
   }
 }
-
-.bg-nav {
-  background-color: #e5cdaf;
-}
-
-/*
-.blockquote span:before,
-.blockquote span:after {
- content: '"';
-}
-*/

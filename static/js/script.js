@@ -14,20 +14,8 @@ function updateProg() {
 }
 
 var navCheck = function() {
-
-
-
   const nav = document.querySelector("#scrollspy-nav");
-  const prog = document.querySelector("#prog");
-  const mast_blur = document.querySelector("#mast-gradient");
-  const mast_content = document.querySelector("#mast-content");
-  const nav_title = document.querySelector("#nav-title");
   
-  var h = nav.offsetHeight;
-
-  var top = document.querySelector('#sectionLanding').offsetHeight;
-  var bord = parseInt(getComputedStyle(document.querySelector('section')).borderTopWidth);
-
   var body = document.body, html = document.documentElement;
 
   var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
@@ -43,13 +31,6 @@ var navCheck = function() {
     //TEXT color
     nav.classList.add("navbar-light")
     nav.classList.remove("navbar-dark")
-
-//    nav_title.classList.add("fs-3")
-
-    //prog.classList.add("visually-hidden")
-//    mast_blur.classList.add("bg-gradient")
-//    mast_content.classList.remove("visually-hidden")
-
   }
   else {
   
@@ -59,19 +40,11 @@ var navCheck = function() {
     //TEXT color
     nav.classList.add("navbar-dark")
     nav.classList.remove("navbar-light")
-
-//    nav_title.classList.remove("fs-3")
-
-    //prog.classList.remove("visually-hidden")
-//    mast_blur.classList.remove("bg-gradient")
-//    mast_content.classList.add("visually-hidden")
-
   }
 }
 
 document.addEventListener('scroll', navCheck);
 
-//load content when scroll to it?
 window.onload = function() {
 
   try {

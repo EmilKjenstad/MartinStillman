@@ -47,7 +47,7 @@ function populateTestimonials() {
 
         <blockquote class="blockquote text-center">
           <div class="blockquote-content">
-            <span class="shrink">"`+ testimonial.quote.trim() +`"</span>
+            <span class="shrink">`+ testimonial.quote.trim() +`</span>
           </div>
           <footer class="blockquote-footer">`+ footer +`</footer>
         </blockquote>
@@ -82,17 +82,6 @@ function populateService() {
     desc += lines[1];
     desc += '</p>'
 
-    // Detect stuff like '-' at start of sentence = bulletpoint
-    /*
-    lines.forEach(line => {
-      if (line != "") {
-        desc += '<p class="card-text">'
-        desc += line;
-        desc += '</p>'
-      }
-    });
-    */
-
     let s = `
             <div id="service`+i+`" class="service row fs-2">
               <div class="col-xl-6 service-img" style="background-image: url('static/assets/img/`+services[i].img+`');"></div>
@@ -105,8 +94,7 @@ function populateService() {
                 </a>
               </div>
             </div>
-      `
-            //<button id="btn_service`+i+`" class="btn btn-link" onclick="showContent('service`+i+`')">See more</button>
+    `
     document.getElementById("sectionService"). innerHTML += s;
   }
 }

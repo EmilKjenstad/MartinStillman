@@ -17,7 +17,7 @@ Dr. Stillman is also a leading researcher and educator in clinician wellness. He
 let services = [
     {
         title: "Skill Development and Training in Conflict Resolution",
-        img: "2048_ba9479e53ffe9349342b0dd0da98c593.jpg",
+        img: "conference.jpg",
         icon: "skills.png",
         description: `
             As a skilled educator, Dr. Martin Stillman is physician, lawyer, and mediator who conducts workshops and educational sessions to help people learn how to successfully navigate and resolve conflict.
@@ -50,7 +50,7 @@ let services = [
         description: `
             Martin Stillman provides executive coaching and leadership development.
             Dr. Stillman combines his extensive leadership and practical experience with an ability to teach and coach in working one-on-one with individuals seeking coaching and professional development. He honed these skills over years as an invited coach and educator for the University of California, San Francisco (UCSF) prestigious year-long physician leadership training program where he mentored physicians and other healthcare providers in their year-long experience.
-            Leaders may seek coaching when struggling to advance a cohesive team or department or resolve conflicts among colleagues at all levels. They may also seek coaching when challanged with seeing their way through how to approach and sequence challanging challenging but necessary actions involving difficult decisions.
+            Leaders may seek coaching when struggling to resolve conflicts among colleagues at all levels, or help a team lacking cohesion. They may also seek coaching when challenged with seeing their way through approaching and sequencing necessary actions involving difficult decisions.
             His formal education in law and medicine, coupled with extensive knowledge of clinical, administrative, financial, personnel, and quality issues associated with medical practice, provides an experienced lens through which he is able to advise. Additionally, his mediation training, gift for teaching (he has received the prestigious University of Minnesota Medical School Outstanding Teaching Award), and relatable style lends itself to meaningful individual coaching and advancement of necessary leadership skills.
             Contact Dr. Martin Stillman to learn more about his availability for your executive coaching and leadership development needs.
         `
