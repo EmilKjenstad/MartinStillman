@@ -43,7 +43,7 @@ function populateTestimonials() {
     if (first) first_item = "active";
 
     let t = `
-      <div class="carousel-item `+first_item+`" data-bs-interval="10000000">
+      <div class="carousel-item `+first_item+`" data-bs-interval="5000">
 
         <blockquote class="blockquote text-center">
           <div class="blockquote-content">

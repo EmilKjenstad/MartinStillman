@@ -186,7 +186,11 @@ hr.divider {
 }
 
 .parallaxTestimonial {
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5)), url("../assets/img/Testimonial.png");
+  background-color: #d2dcf4;
+  /*
+  background-color:rgb(224, 220, 200);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.80) 50%, rgba(255, 255, 255, 0.80)), url("../assets/img/Testimonial.png");
+  */
 }
 
 .parallaxMasthead {
@@ -194,7 +198,7 @@ hr.divider {
 }
 
 .parallaxResume {
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/res.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75)), url("../assets/img/res.jpg");
 }
 
 .parallaxTestimonial, .parallaxBio,
