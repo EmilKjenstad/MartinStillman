@@ -155,10 +155,30 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   let lines = service.description.split("\n");
   var content = "";
 
+  let list_item = false;
+
   lines.forEach(line => {
-    content += '<p>'
-    content += line;
-    content += '</p>'
+    let trimmed = line.trim();
+
+    if (trimmed.startsWith("- ")) {
+      if (!list_item) {
+        list_item = true;
+        content += '<ul>'
+      }
+      content += '<li>'
+      content += trimmed.substring(2);
+      content += '</li>'
+
+    }
+    else {
+      if (list_item) {
+        list_item = false;
+        content += '</ul>'
+      }
+      content += '<p>'
+      content += trimmed;
+      content += '</p>'
+    }
   });
   var title = service.title;
 

@@ -38,9 +38,19 @@ let services = [
         icon: "mediation.png",
         description: `
             Martin Stillman, MD, JD, is a skilled mediator and facilitator who is available to provide mediation services in-person or virtually.
-            Dr. Stillman currently serves as Hennepin Healthcare System's Mediation and Conflict Resolution Officer in Minneapolis, Minnesota, and he has served as an invited coach and trainer for other mediation training programs as well. He has experience mediating one-on-one conflicts, small group issues, and conflicts involving large departments and/or systems. 
-            Dr. Stillman respects the process of mediation, skillfully facilitating the defining of relevant issues and helping the parties collaboratively advance potential solutions to their collective concerns. He is proficient in creating safe spaces for conversations to take place and minimizing barriers to communications, actively helping those involved avoid unhealthy confrontation and ill will. 
-            Contact Dr. Martin Stillman to explore how his mediation services can help you and your organization directly address troubling conflict that needs experienced and thoughtful intervention. 
+            Dr. Stillman currently serves as Hennepin Healthcare System's Mediation and Conflict Resolution Officer in Minneapolis, Minnesota, and he has served as an invited coach and trainer for mediation training programs as well. He has experience mediating one-on-one conflicts, small group issues, and conflicts involving large departments and/or systems.
+            Dr. Stillman respects the process of mediation, skillfully facilitating the defining of relevant issues and helping the parties collaboratively advance potential solutions to their collective concerns. He is proficient in creating safe spaces for conversations to take place and minimizing barriers to communications, actively helping those involved avoid unhealthy confrontation and ill will.
+            Dr. Stillman has helped mediate conflicts in healthcare systems across the country, addressing many issues which have included:
+                - Disagreements involving hospital departments' scopes of practice
+                - Constructive communication and conduct guidelines for care team members, including physicians, advanced practice providers, nurses, and resident physicians
+                - Conflicts among executive leadership team members inhibiting institutional progress
+                - Long-standing conflicts between or among departments and/or providers which feel "unmovable"
+                - Need for individual coaching for leaders facing challenges (see Executive Coaching and Leadership Development section)
+                - Overcoming barriers to addressing physician and care team member burnout
+                - Development of Practice Agreements between two or more Departments
+                - Disagreements involving resource allocation
+                - Resistance to change involving operational care delivery initiatives 
+            Contact Dr. Martin Stillman to explore how his mediation services can help you and your organization directly address troubling conflict that needs experienced and thoughtful intervention.
         `
     },
     {
