@@ -16,7 +16,7 @@ Dr. Stillman is also a leading researcher and educator in clinician wellness. He
 
 let services = [
     {
-        title: "Skill Development and Training in Conflict Resolution",
+        title: "Conflict Resolution Training and Skill Development",
         img: "conference.jpg",
         icon: "skills.png",
         description: `
