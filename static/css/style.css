@@ -4,6 +4,13 @@
  content: '"';
 }
 
+.top-landing {
+  top: 56px !important;
+}
+.btn-landing {
+  left: 15% !important;
+}
+
 .resume-section:not(:first-child) {
   border-top: 0.5rem solid var(--bs-secondary);
   margin-top: 1rem;
@@ -18,7 +25,7 @@
 /* GENERAL */
 .bg-gradient-light {
   background:         rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 40px 40px rgba(255,255,255, 0.5);
+  box-shadow: 0 0px 40px 40px rgba(255,255,255, 0.5);
 }
 
 .service-icon {
@@ -29,6 +36,11 @@
 }
 .screen {
   display: block;
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .shrink {
@@ -246,15 +258,15 @@ hr.divider {
   height: 100%;
 }
 
-#mast-content {
+.mast-content {
   width: 69%;
 }
 
-#mast-content .row:not(:first-child) {
+.mast-content .row:not(:first-child) {
   --distance: 100px;
   margin-top: var(--distance);
 }
-#mast-content .row:not(:last-child) {
+.mast-content .row:not(:last-child) {
   --distance: 100px;
   margin-bottom: var(--distance);
 }
@@ -356,39 +368,21 @@ header.masthead .masthead-heading {
     width: 30px;
   }
   /* HEADER */
-  .landing-icon img {
-    height: 51px !important;
-    width: 51px !important;
 
-  }
-  .landing-icon {
-    margin: 0;
-    font-weight: 900;
-    font-size: 2rem;
-  }
 
   #landing-marty {
     overflow: hidden;
   }
 
-  .phone {
-    display: block !important;
-  }
-  .screen {
-    display: none !important;
-  }
 
-  .phone .row {
-    --distance-phone-icon: 1rem;
-    margin-top: var(--distance-phone-icon) !important;
-    margin-bottom: var(--distance-phone-icon) !important;
-  }
 
-  #mast-content .row:not(:first-child) {
+  
+
+  .mast-content .row:not(:first-child) {
     --distance: 20px;
     margin-top: var(--distance);
   }
-  #mast-content .row:not(:last-child) {
+  .mast-content .row:not(:last-child) {
     --distance: 20px;
     margin-bottom: var(--distance);
   }
@@ -411,7 +405,7 @@ header.masthead .masthead-heading {
     left: 0;
     width: 100%;  
   }
-  #mast-content {
+  .mast-content {
     width: 100%;
   }
   
@@ -426,6 +420,30 @@ header.masthead .masthead-heading {
 
   .nav-divider {
     display: none !important;
+  }
+  .phone {
+    display: block !important;
+  }
+  .phone .row {
+    --distance-phone-icon: 1rem;
+    margin-top: var(--distance-phone-icon) !important;
+    margin-bottom: var(--distance-phone-icon) !important;
+  }
+  .landing-icon img {
+    height: 51px !important;
+    width: 51px !important;
+
+  }
+  .landing-icon {
+    margin: 0;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .screen {
+    display: none !important;
+  }
+  .btn-landing {
+    left: 50% !important;
   }
 }
 @media (max-width: 1299px){
