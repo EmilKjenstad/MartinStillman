@@ -3,6 +3,11 @@
 .blockquote span:after {
  content: '"';
 }
+@media (min-width: 1299px) {
+  .top-landing {
+    top: 150px !important;
+  }  
+}
 
 .top-landing {
   top: 100px !important;
