@@ -47,7 +47,7 @@ let services = [
                 - Overcoming barriers to addressing physician and care team member burnout
                 - Development of Practice Agreements between two or more Departments
                 - Disagreements involving resource allocation
-                - Resistance to change involving operational care delivery initiative
+                - Resistance to change involving operational care delivery initiatives
             Dr. Stillman currently serves as Hennepin Healthcare System's Mediation and Conflict Resolution Officer in Minneapolis, Minnesota, and he has served as an invited coach and trainer for mediation training programs as well. He has experience mediating one-on-one conflicts, small group issues, and conflicts involving large departments and/or systems.
             Dr. Stillman respects the process of mediation, skillfully facilitating the defining of relevant issues and helping the parties collaboratively advance potential solutions to their collective concerns. He is proficient in creating safe spaces for conversations to take place and minimizing barriers to communications, actively helping those involved avoid unhealthy confrontation and ill will.
             Contact Dr. Martin Stillman to explore how his mediation services can help you and your organization directly address troubling conflict that needs experienced and thoughtful intervention.
