@@ -3,9 +3,9 @@
 .blockquote span:after {
  content: '"';
 }
-@media (min-width: 1600px) {
+@media (min-width: 1610px) {
   .top-landing {
-    top: 200px !important;
+    top: 135px !important;
   }  
 }
 
