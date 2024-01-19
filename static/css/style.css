@@ -9,6 +9,12 @@
   }  
 }
 
+@media (max-width: 1610px) {
+  .top-landing {
+    top: 135px !important;
+  }  
+}
+
 .top-landing {
   top: 100px;
 }
