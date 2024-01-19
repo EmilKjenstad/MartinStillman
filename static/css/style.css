@@ -3,14 +3,14 @@
 .blockquote span:after {
  content: '"';
 }
-@media (min-width: 1299px) {
+@media (min-width: 1600px) {
   .top-landing {
-    top: 150px !important;
+    top: 200px !important;
   }  
 }
 
 .top-landing {
-  top: 100px !important;
+  top: 100px;
 }
 .btn-landing {
   left: 15% !important;
