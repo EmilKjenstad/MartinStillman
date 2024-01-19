@@ -76,5 +76,5 @@ function resizeFont(e) {
 
 document.getElementById('landing-next-section').onclick = function () {
   var top = document.querySelector('#sectionLanding').offsetHeight;
-  window.scrollTo(0, window.scrollY+top);
+  window.scrollTo(0, top);
 }

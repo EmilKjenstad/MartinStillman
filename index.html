@@ -271,14 +271,28 @@
             </div>
 
             <div class="row justify-content-center mb-5">
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- * * SB Forms Contact Form * *-->
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- This form is pre-integrated with SB Forms.-->
+              <!-- To make this form functional, sign up at-->
+              <!-- https://startbootstrap.com/solution/contact-forms-->
+              <!-- to get an API token!-->
               <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <!--
+                  form-floating
+                  form-control
+                  invalid-feedback
+                -->
                 
+                <!-- Name input-->
                 <div class="form-floating mb-3">
                   <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                   <label for="name">Full name</label>
                   <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                 </div>
 
+                <!-- Email address input-->
                 <div class="form-floating mb-3">
                   <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                   <label for="email">Email address</label>
@@ -286,12 +300,31 @@
                   <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                 </div>
 
+                <!-- Message input-->
                 <div class="form-floating mb-3">
                   <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                   <label for="message">Message</label>
                   <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                 </div>
 
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                  <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    To activate this form, sign up at
+                    <br />
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                  </div>
+                </div>
+
+                <!-- Submit error message-->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                <!-- Submit Button-->
                 <div class="d-grid"><button class="btn btn-primary text-uppercase rounded-pill disabled" id="submitButton" type="submit">Submit</button></div>
                 
               </form>
@@ -342,7 +375,12 @@
           <div class="modal-body fs-4"></div>
 
           <div class="modal-footer">
-            <button id="btn-contact" type="button" class="btn btn-primary btn-lg" data-bs-dismiss="modal">Contact Dr. Stillman</button>
+            <button id="btn-contact" type="button" class="btn btn-primary btn-lg" data-bs-dismiss="modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+              </svg>
+              Contact Dr. Stillman
+            </button>
           </div>
         </div>
       </div>
