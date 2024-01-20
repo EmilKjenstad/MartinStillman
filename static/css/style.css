@@ -261,6 +261,17 @@ hr.divider {
   width: 69%;
 }
 
+@media (min-height: 750px) and (min-width: 1200px) {
+  .mast-content .row:not(:first-child) {
+    --distance2: 100px;
+    margin-top: var(--distance2) !important;
+  }
+  .mast-content .row:not(:last-child) {
+    --distance2: 100px;
+    margin-bottom: var(--distance2) !important;
+  }
+}
+
 .mast-content .row:not(:first-child) {
   --distance: 55px;
   margin-top: var(--distance);
