@@ -3,20 +3,9 @@
 .blockquote span:after {
  content: '"';
 }
-@media (min-width: 1610px) {
-  .top-landing {
-    top: 135px !important;
-  }  
-}
 
-@media (max-width: 1610px) {
-  .top-landing {
-    top: 135px !important;
-  }  
-}
-
-.top-landing {
-  top: 100px;
+.mlt {
+  margin-top: 100px !important;
 }
 .btn-landing {
   left: 5% !important;
@@ -36,7 +25,7 @@
 /* GENERAL */
 .bg-gradient-light {
   background:         rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0px 40px 40px rgba(255,255,255, 0.5);
+  box-shadow: 0 0px 40px 40px rgba(255,255,255, 0.5); 
 }
 
 .service-icon {
@@ -48,7 +37,6 @@
 .screen {
   display: block;
   position: absolute;
-  width: 69%;
   bottom: 0;
   right: 0;
   z-index: 2;
@@ -274,11 +262,11 @@ hr.divider {
 }
 
 .mast-content .row:not(:first-child) {
-  --distance: 100px;
+  --distance: 55px;
   margin-top: var(--distance);
 }
 .mast-content .row:not(:last-child) {
-  --distance: 100px;
+  --distance: 55px;
   margin-bottom: var(--distance);
 }
 
@@ -311,7 +299,7 @@ header.masthead .masthead-subheading {
 header.masthead .masthead-heading {
   font-size: 75px;
   font-weight: 900;
-  line-height: 4rem;
+  line-height: 75px;
 }
 
 
@@ -360,7 +348,12 @@ header.masthead .masthead-heading {
     font-weight: 900;
     font-size: 2rem;
   }
-
+}
+@media (max-width: 767px) {
+  .service-icon {
+    width: 30px;
+  }
+  /* HEADER */
   header.masthead .masthead-heading {
     font-size: 3rem;
     line-height: 3rem;
@@ -373,29 +366,8 @@ header.masthead .masthead-heading {
     line-height: 2rem;
     margin-bottom: 1rem;
   }
-}
-@media (max-width: 767px) {
-  .service-icon {
-    width: 30px;
-  }
-  /* HEADER */
-
-
   #landing-marty {
     overflow: hidden;
-  }
-
-
-
-  
-
-  .mast-content .row:not(:first-child) {
-    --distance: 20px;
-    margin-top: var(--distance);
-  }
-  .mast-content .row:not(:last-child) {
-    --distance: 20px;
-    margin-bottom: var(--distance);
   }
 
 }
@@ -418,6 +390,15 @@ header.masthead .masthead-heading {
   }
   .mast-content {
     width: 100%;
+  }
+
+  .mast-content .row:not(:first-child) {
+    --distance: 20px;
+    margin-top: var(--distance);
+  }
+  .mast-content .row:not(:last-child) {
+    --distance: 20px;
+    margin-bottom: var(--distance);
   }
   
   /**** NAVBAR ****/
@@ -463,3 +444,9 @@ header.masthead .masthead-heading {
     padding: 1rem ;
   }
 }
+@media (min-width: 1610px) {
+  .mlt {
+    margin-top: 135px !important;
+  }  
+}
+
