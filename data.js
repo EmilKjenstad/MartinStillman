@@ -1,11 +1,3 @@
-// STORED DATA FOR MARTY
-let contact_info = {
-    email: "dummy@fake.org",
-    phone: "+1 (987) 654-3210",
-    address: "Where"
-}
-
-
 let bio = `
 Martin Stillman, MD, JD, is a physician, lawyer, and mediator. He is a practicing general internist at Hennepin Healthcare System (HHS) in Minneapolis, Minnesota, where he also serves as the Mediation and Conflict Resolution Officer. 
 Along with practicing internal medicine, Dr. Martin Stillman mediates conflict among health care professionals and teaches about conflict resolution in health care across the country, helping everyone from front line clinicians to executive leaders learn how to successfully evaluate and address conflict within healthcare. He developed the Conflict Resolution and Facilitation Training (©CRAFT) Program for clinicians and healthcare leaders which is now delivered both in-person and virtually. In addition, Dr. Stillman is an Associate Professor of Medicine at the University of Minnesota Medical School where he teaches about law and medicine, and he continues to serve as a member of the national American Arbitration Association Healthcare Dispute Resolution Advisory Council.

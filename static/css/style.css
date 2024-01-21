@@ -296,6 +296,7 @@ hr.divider {
 
 header.masthead {
   height: 100vh;
+  min-height: 700px;
   position: relative;
   color: black;
   padding-top: 5rem;

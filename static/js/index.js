@@ -13,12 +13,6 @@ window.onload = function() {
   }
 
   try {
-    populateContact();
-  } catch (error) {
-    console.log("ERROR CONTACT");
-  }
-
-  try {
     populateTestimonials();
   } catch (error) {
     console.log("ERROR CONTACT");
@@ -62,13 +56,6 @@ function populateTestimonials() {
     first = false;
   }
 
-}
-
-function populateContact() {
-  document.querySelector("#contact_phone").innerHTML = contact_info.phone;
-  document.querySelector("#contact_email").innerHTML = contact_info.email;
-  document.querySelector("#contact_address").innerHTML = contact_info.address;
-  
 }
 
 function populateService() {
